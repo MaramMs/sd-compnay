@@ -1,0 +1,40 @@
+@use '../helpers/variables.scss' as *;
+.services{
+    background-color: $black_bg;
+    padding: 25px 32px 87px 32px;
+    position: relative;
+    .title{
+        font-family: 'montserrat', sans-serif;
+        font-size: 150px;
+        font-weight: 700;
+        line-height: 150px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        h3{
+            font-family: 'montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            background: linear-gradient(270deg, #8031CD 2.11%, #D328EC 73.53%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p{
+            font-family: 'montserrat', sans-serif;
+            color: $text-p;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+    .cover{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+}

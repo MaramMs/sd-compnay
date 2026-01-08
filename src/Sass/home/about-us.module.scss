@@ -1,0 +1,56 @@
+@use "../helpers/variables.scss" as *;
+.about {
+  padding: 96px 0px;
+  .container {
+    max-width: 1200px;
+    // margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+.content{
+  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .title {
+    font-family: "montserrat", sans-serif;
+    background: linear-gradient(270deg, #8031CD 2.11%, #d328ec 73.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .des {
+    font-family: "montserrat", sans-serif;
+    color: $text-p;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+    width: 600px;
+  }
+
+}
+  
+.experiences {
+  width: 100%;
+}
+  .experience {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    span {
+      color: #5c0a8c;
+      font-family: "montserrat", sans-serif;
+      font-size: 120px;
+      font-weight: 400;
+    }
+    p {
+      font-family: "montserrat", sans-serif;
+      color: $text-p;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 70px;
+    }
+  }
+}

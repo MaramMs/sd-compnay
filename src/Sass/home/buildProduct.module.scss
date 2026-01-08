@@ -1,0 +1,54 @@
+@use '../helpers/variables.scss' as *;
+.buildProduct{
+    margin: 96px 0;
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        border-radius: 24px;
+        background: linear-gradient(180deg, #251462 17.74%, #8031CD 82.26%);
+         display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 72px 32px;
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    .text{
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        h2{
+            color: $white_50;
+            font-weight: 700;
+            font-size: 36px;
+            text-align: center;
+            line-height: 52px;
+font-family: 'montserrat', sans-serif;
+        }
+        p{
+            color: #E5E7EB;
+            font-weight: 400;
+            font-size: 20px;
+            text-align: center;
+            line-height: 30.6px;
+        }
+    }
+    Button{
+        font-size: 16px;
+        height: 48px;
+        font-weight: 600 ;
+        font-family: 'montserrat', sans-serif;
+        max-width: fit-content;
+        padding: 10px 24px;
+        background-color: transparent;
+        border :1px solid #D328EC;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px 0px #A713FF33;
+
+    }
+}   
+    }
+}
