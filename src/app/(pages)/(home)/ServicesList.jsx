@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import style from "@/Sass/home/servicesList.module.scss";
 import icon from "../../../../public/assets/icon.svg";
+import { FaWhatsapp } from "react-icons/fa";
 
 const servicesItems = [
   {
@@ -44,7 +45,13 @@ const ServicesList = () => {
           </div>
        </div>
         ))}
+
+      
       </div>
+         <div className={style.whatsapp}>
+      <FaWhatsapp size={38} color='white' />
+
+    </div>
     </div>
   );
 };

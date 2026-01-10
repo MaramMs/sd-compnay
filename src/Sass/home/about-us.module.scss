@@ -1,56 +1,172 @@
 @use "../helpers/variables.scss" as *;
+
 .about {
   padding: 96px 0px;
+
   .container {
     max-width: 1200px;
-    // margin: 0 auto;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: column;
-  }
-.content{
-  width: 100%;
-    display: flex;
-    justify-content: space-between;
-    .title {
-    font-family: "montserrat", sans-serif;
-    background: linear-gradient(270deg, #8031CD 2.11%, #d328ec 73.53%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 36px;
-    font-weight: 700;
-  }
-  .des {
-    font-family: "montserrat", sans-serif;
-    color: $text-p;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 40px;
-    width: 600px;
+    justify-content: center;
+    align-items: center;
   }
 
-}
-  
-.experiences {
-  width: 100%;
-}
-  .experience {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    // align-items: center;
+    width: 100%;
+    padding: 16px;
+
+    .title {
+      font-family: "montserrat", sans-serif;
+      background: linear-gradient(270deg, #8031cd 2.11%, #d328ec 73.53%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    .des {
+      font-family: "montserrat", sans-serif;
+      color: $text-p;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 40px;
+      width: 600px;
+    }
+  }
+
+  .experiencesContainer {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    img {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background-color: #d792ff;
+      }
+    }
+  }
+
+  .experiences {
+    display: flex;
+    flex-direction: column;
+    // width: 100%;
+  }
+
+  .box {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #202122;
+
     span {
-      color: #5c0a8c;
+      color: #452EB4;
       font-family: "montserrat", sans-serif;
       font-size: 120px;
       font-weight: 400;
     }
+
     p {
       font-family: "montserrat", sans-serif;
       color: $text-p;
       font-size: 48px;
       font-weight: 400;
       line-height: 70px;
+    }
+  }
+  .aboutPhotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // صفين، كل صف فيه 2 صورة
+    gap: 20px;
+    .imgWrap {
+      position: relative;
+
+      img {
+        position: relative;
+        z-index: 2;
+        border-radius: 16px;
+      }
+    }
+    .first::before {
+      content: "";
+      position: absolute;
+      width: 351px;
+      height: 302px;
+      background: #d792ff;
+      top: -20px;
+      left: -20px;
+      z-index: 1;
+      border-top-left-radius: 136px;
+      border-top-right-radius: 24px;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+      overflow: hidden;
+    }
+    .last {
+  position: relative; // مهم عشان الـ logo يكون absolute بالنسبة لها
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    position: absolute;
+    top: -38px;
+    left: -63px;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background-color: #202122;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 14.7px 0px #007aff;
+    .logoImage {
+      width: 60px;
+      height: auto; 
+      object-fit: contain;
+      top: 0px;
+      left: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 11px;
+    top: 20px;
+}
+    }
+  
+}
+
+    
+    .last img:first-of-type {
+      margin-right: 20px;
+      position: absolute;
+      left: -88px;
+      top: -8px;
+    }
+    .last::before {
+      content: "";
+      position: absolute;
+      width: 291px;
+      height: 302px;
+      background: #251462;
+      bottom: -6px;
+      left: -73px;
+      z-index: 1;
+      border-top-left-radius: 24px;
+      border-top-right-radius: 136px;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+      overflow: hidden;
     }
   }
 }

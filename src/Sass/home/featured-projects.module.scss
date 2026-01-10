@@ -50,86 +50,100 @@
       font-size: 20px;
     }
   }
-  .card {
-    background: linear-gradient(180deg, #5c0a8c 17.74%, #00438c 82.26%);
-    border-radius: 32px;
-    border: 1px solid #ffffff1a;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
     gap: 24px;
-    height: 100%;
-    .image {
-      border-radius: 12px;
-      height: 197px;
-      object-fit: cover;
-    }
+    .gridOne {
+  grid-column: span 2;
+  grid-row: span 2;
+   .card {
+      background: linear-gradient(180deg, #251462 17.74%, #8031cd 82.26%);
 
-    h3 {
-      color: white;
-      line-height: 48px;
-      font-weight: 600;
-      font-size: 24px;
-      font-family: "montserrat", sans-serif;
-    }
-    .categories {
+      border-radius: 32px;
+      border: 1px solid #ffffff1a;
+      padding: 20px;
       display: flex;
+      flex-direction: column;
       gap: 24px;
-      span {
-        background: #a713ff1f;
-        border-radius: 20px;
-        padding: 12px 24px;
-        color: $white_50;
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: 400;
+      height: 100%;
+      .image {
+        border-radius: 12px;
+        height: 197px;
+        object-fit: cover;
+      }
+
+      h3 {
+        color: white;
+        line-height: 48px;
+        font-weight: 600;
+        font-size: 24px;
         font-family: "montserrat", sans-serif;
       }
-    }
-    .des {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 16px 0;
-      border-bottom: 1px solid #d792ff4d;
-      .rate {
+      .categories {
         display: flex;
-        justify-content: center;
+        gap: 24px;
+        span {
+          background: #a713ff1f;
+          border-radius: 20px;
+          padding: 12px 24px;
+          color: $white_50;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 400;
+          font-family: "montserrat", sans-serif;
+          outline: 1px solid #ffffff2b;
+        }
+      }
+      .des {
+        display: flex;
         align-items: center;
-        width: 32.25px;
-        height: 32.25px;
-        background-color: #b3a9e0;
-        border-radius: 50%;
-        color: $white_50;
+        gap: 16px;
+        padding: 16px 0;
+        border-bottom: 1px solid #d792ff4d;
+        .rate {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 32.25px;
+          height: 32.25px;
+          background-color: #b3a9e0;
+          border-radius: 50%;
+          color: $white_50;
+        }
+        p {
+          color: $white_50;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 27px;
+          font-family: "montserrat", sans-serif;
+        }
       }
-      p {
-        color: $white_50;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 27px;
-        font-family: "montserrat", sans-serif;
+      .viewProject {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 10px;
+        span {
+          color: $white_50;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 27px;
+          font-family: "montserrat", sans-serif;
+        }
       }
     }
-    .viewProject {
-      display: flex;
-      justify-content: end;
-      align-items: center;
-      gap: 10px;
-      span {
-        color: $white_50;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 27px;
-        font-family: "montserrat", sans-serif;
-      }
-    }
+}
+
+   
   }
 
   .cardTwo {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    background: linear-gradient(180deg, #5c0a8c 17.74%, #00438c 82.26%);
+    background: linear-gradient(180deg, #251462 17.74%, #8031cd 82.26%);
     border-radius: 32px;
     border: 1px solid #ffffff1a;
     padding: 20px;

@@ -19,7 +19,7 @@
     padding: 60px 64px;
     display: flex;
     flex-direction: column;
-    gap:64px;
+    gap: 64px;
     .contentTitle {
       display: flex;
       flex-direction: column;
@@ -38,12 +38,12 @@
         color: $white_50;
         font-size: 20px;
         line-height: 30px;
-           font-family: "montserrat", sans-serif;
+        font-family: "montserrat", sans-serif;
       }
     }
 
     .card {
-      background: #00438c1f;
+      background: #452EB41F;
       border-radius: 20px;
       width: 520px;
       padding: 24px;
@@ -51,13 +51,34 @@
       flex-direction: column;
       gap: 12px;
       text-align: center;
+      overflow: hidden;
+      &::after {
+        content: "";
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 40px;
+        position: relative;
+        opacity: 0.3;
+        border-radius: 50%;
+       
+
+        box-shadow:  5px 8px 20px 19px #d328ec;
+        // background-color: #D328EC;
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          #d328ec 0%,
+          #251462 100%
+        );
+      }
+
       h3 {
         font-family: "montserrat", sans-serif;
         font-weight: 600;
         color: white;
         font-size: 24px;
       }
-      p{
+      p {
         color: white;
         font-weight: 400;
         font-family: "montserrat", sans-serif;

@@ -1,0 +1,144 @@
+@use "./helpers/variables.scss" as *;
+
+.footer {
+  background-color: $black_bg;
+  padding: 32px 0px;
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    .content {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 47px;
+      .contentInfo {
+        max-width: 341px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        p {
+          color: #d1d5dc;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 27.5px;
+          font-family: "montserrat", sans-serif;
+        }
+        .social {
+          display: flex;
+          gap: 16px;
+          .icon {
+            width: 48px;
+            height: 48px;
+            background-color: #251462;
+            border-radius: 8px;
+            padding: 8px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      .company,
+      .services,
+      .resources {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        h2 {
+          font-family: "montserrat", sans-serif;
+
+          color: #6b7280;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 31px;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          li {
+            color: #d1d5dc;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+            font-family: "montserrat", sans-serif;
+          }
+        }
+      }
+      .resources {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        .blog {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          span {
+            color: #d1d5dc;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: "montserrat", sans-serif;
+          }
+        }
+        .contact {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          .contactItem {
+            display: flex;
+            gap: 8px;
+            span {
+              color: #fcfcfc;
+              font-weight: 400;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .copy {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 32px;
+      border-top: 1px solid #364153;
+      p {
+        color: $white_50;
+        font-weight: 400;
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .contentInfo {
+    width: 100%; // ❗ مهم
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contentInfo {
+    width: 100%;
+  }
+
+  .social {
+    flex-wrap: wrap;
+  }
+
+  .copy {
+    text-align: center;
+  }
+}

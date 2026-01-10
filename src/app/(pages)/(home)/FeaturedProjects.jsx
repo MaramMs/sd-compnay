@@ -16,8 +16,8 @@ const FeaturedProjects = () => {
           </p>
         </div>
 
-        <div class="grid grid-cols-3 grid-rows-2 gap-4 gap-x-4 ">
-          <div class="col-span-2 row-span-2 ">
+        <div class={style.grid}>
+          <div class={style.gridOne}>
             <div className={style.card}>
               <div className={style.image}>
                 <Image
@@ -48,7 +48,7 @@ const FeaturedProjects = () => {
               </div>
             </div>
           </div>
-          <div class="col-span-1 row-span-1">
+          <div class={style.gridTwo}>
             <div className={style.cardTwo}>
               <div className={style.image}>
                 <Image
@@ -81,7 +81,7 @@ const FeaturedProjects = () => {
               </div>
             </div>
           </div>
-          <div class="col-span-1 row-span-1">
+          <div class={style.gridThree}>
             <div className={style.cardTwo}>
               <div className={style.image}>
                 <Image
@@ -118,6 +118,11 @@ const FeaturedProjects = () => {
       </div>
     </div>
   );
+
+  // background: radial-gradient(50% 50% at 50% 50%, #D328EC 0%, #251462 100%);
+  // background: radial-gradient(50% 50% at 50% 50%, #D328EC 0%, #251462 100%);
+// 
+
 };
 
 export default FeaturedProjects;
