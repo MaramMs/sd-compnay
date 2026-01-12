@@ -1,0 +1,127 @@
+@use "../helpers/variables.scss" as *;
+.ourTeam {
+  padding: 64px 0px;
+  background-color: #eceaf8;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 33px 35px;
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+    box-shadow: 0px 0px 16.7px 0px #00438c1f;
+    .content {
+      padding: 0px 35px;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+    .contentTitle {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      text-align: center;
+      width: 70%;
+      margin: auto;
+      h3 {
+        background: linear-gradient(270deg, #a713ff 2.11%, #ff10ff 73.53%);
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "montserrat", sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+      }
+      p {
+        color: #6b7280;
+        font-family: "montserrat", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: center;
+      }
+    }
+    .teamItem {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      background-color: $white_50;
+      padding: 85px 31px;
+      border-bottom: 6px solid #251462;
+      text-align: center;
+      height: 374px;
+      h2 {
+        color: #303a49;
+        font-weight: 700;
+        font-size: 20px;
+        font-family: "montserrat", sans-serif;
+      }
+      h3 {
+        font-family: "montserrat", sans-serif;
+        font-weight: 400;
+        color: #303a49;
+        font-size: 20px;
+      }
+      p {
+        color: #303a49;
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+    .card {
+      position: relative;
+      height: 374px;
+      overflow: hidden;
+      .cover {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+      }
+      .cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .cover::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0) 31.42%,
+          rgba(37, 20, 98, 0.6) 100%
+        );
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        position: absolute;
+        bottom: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        text-align: center;
+        h4 {
+          color: #ffffff;
+          font-weight: 700;
+          font-size: 20px;
+          font-family: "montserrat", sans-serif;
+        }
+        span {
+          font-size: 20px;
+          font-weight: 400;
+          font-family: "montserrat", sans-serif;
+          color: white;
+        }
+      }
+
+      &:hover .cover {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}

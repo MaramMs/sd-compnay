@@ -24,8 +24,6 @@ const CustomSwiper = () => {
               <Server className={style.icon} size={50} />
             </div>
             <span>Service 1</span>
-
-            {/* <Cloud /> */}
           </div>
 
           <div className={style.serviceDesc}>

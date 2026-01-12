@@ -1,0 +1,43 @@
+@use '../helpers/variables.scss' as *;
+.servicesContent{
+    padding: 96px;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    max-width: 1200px;
+    margin: 0px auto;
+    .contentTitle{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+h2{
+    background: linear-gradient(270deg, #8031CD 2.11%, #D328EC 73.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+
+}
+.des{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    p{
+    color: #303A49;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+        font-family: "montserrat", sans-serif;
+
+}
+}
+    }
+    .servicesItems{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 16px;
+    }
+}
+}
+
