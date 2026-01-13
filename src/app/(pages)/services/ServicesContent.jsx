@@ -1,6 +1,15 @@
 import React from "react";
 import style from "../../../Sass/services/servicesContent.module.scss";
 import ServiceCard from "@/components/ServiceCard";
+import Link from "next/link";
+const services = [
+  { id: 1, slug: "backend-development" },
+  { id: 2, slug: "ui-ux-design" },
+  { id: 3, slug: "fintech-solutions" },
+  { id: 4, slug: "mobile-apps" },
+  { id: 5, slug: "cloud-services" },
+  { id: 6, slug: "ai-solutions" },
+];
 
 const ServicesContent = () => {
   return (
@@ -21,15 +30,18 @@ const ServicesContent = () => {
             </p>
           </div>
         </div>
-
         <div className={style.servicesItems}>
-<ServiceCard />
-<ServiceCard />
-<ServiceCard />
-<ServiceCard />
-<ServiceCard />
-<ServiceCard />
-
+          <div className={style.servicesItems}>
+            {services.map((service) => (
+              <Link
+                key={service.id}
+                href={`/services/${service.slug}`}
+                className={style.serviceLink}
+              >
+                <ServiceCard />
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </div>

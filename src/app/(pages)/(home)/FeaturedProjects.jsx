@@ -118,11 +118,6 @@ const FeaturedProjects = () => {
       </div>
     </div>
   );
-
-  // background: radial-gradient(50% 50% at 50% 50%, #D328EC 0%, #251462 100%);
-  // background: radial-gradient(50% 50% at 50% 50%, #D328EC 0%, #251462 100%);
-// 
-
 };
 
 export default FeaturedProjects;
