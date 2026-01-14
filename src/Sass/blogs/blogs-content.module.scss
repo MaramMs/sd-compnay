@@ -1,0 +1,19 @@
+.blogContent{
+    padding: 96px 0px;
+    background-color: #FAF5FF;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    .container{
+    margin: 0px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 16px;
+    }
+}

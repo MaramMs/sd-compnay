@@ -1,0 +1,34 @@
+.relatedBlog {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      background: linear-gradient(270deg, #8031cd 2.11%, #d328ec 73.53%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+      font-size: 36px;
+    }
+    Button{
+        background-color: #D328EC;
+        box-shadow: 0px 4px 12px 0px #A713FF33;
+height: 48px;
+border-radius: 12px;
+padding: 8px 24px;
+color: #FFFFFF;
+font-weight: 600;
+font-size: 16px;
+    }
+ 
+  }
+
+     .cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 16px;
+    }
+}

@@ -1,105 +1,3 @@
-// .searchWrapper {
-//   display: flex;
-//   align-items: center;
-//   height: 64px;
-//   padding: 3px;
-//   border-radius: 20px;
-//   border-radius: 20px;
-//   font-family: "montserrat", sans-serif;
-//   border: 3px solid transparent;
-//   border-image-source: linear-gradient(180deg, #251462 17.74%, #8031cd 82.26%);
-//   border-image-slice: 1;
-// }
-
-// .searchInput {
-//   flex: 1;
-//   height: 100%;
-//   border: none;
-//   border-radius: 16px 0 0 16px;
-//   padding: 0 16px;
-//   background: #fff;
-// }
-
-// .filterBtn {
-//   height: 48px;
-//   margin-inline: 8px;
-//   padding: 8px 24px;
-//   border-radius: 12px;
-//   background: #d328ec;
-//   color: #fcfcfc;
-//   font-size: 16px;
-//   border: none;
-//   cursor: pointer;
-//   white-space: nowrap;
-//   box-shadow: 0px 4px 12px 0px #a713ff33;
-//   font-weight: 600;
-// }
-
-// .icon {
-//   width: 24px;
-//   height: 24px;
-//   margin-right: 8px;
-//   border-radius: 12px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   color: #8031cd;
-// }
-
-
-// .searchWrapper {
-//   display: flex;
-//   align-items: center;
-//   height: 64px;
-//   padding: 3px;
-//   border-radius: 20px;
-//   overflow: hidden; // 🔥 مهم
-//   font-family: "montserrat", sans-serif;
-
-// //   background: linear-gradient(
-// //     180deg,
-// //     #251462 17.74%,
-// //     #8031cd 82.26%
-// //   );
-// }
-
-// .searchInput {
-//   flex: 1;
-//   height: 100%;
-//   border: none;
-//   border-radius: 16px 0 0 16px;
-//   padding: 0 16px;
-//   background: #fff;
-// }
-
-// .filterBtn {
-//   height: 48px;
-//   margin-inline: 8px;
-//   padding: 8px 24px;
-//   border-radius: 12px;
-//   background: #d328ec;
-//   color: #fcfcfc;
-//   font-size: 16px;
-//   border: none;
-//   cursor: pointer;
-//   white-space: nowrap;
-//   box-shadow: 0px 4px 12px 0px #a713ff33;
-//   font-weight: 600;
-// }
-
-// .icon {
-//   width: 40px;
-//   height: 40px;
-//   margin-right: 8px;
-//   border-radius: 12px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   color: #8031cd;
-// }
-
-
-
 .searchWrapper {
   position: relative;
   display: flex;
@@ -114,9 +12,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  padding: 3px; // سماكة البوردر
+  padding: 3px;
   border-radius: 20px;
-
   background: linear-gradient(
     180deg,
     #251462 17.74%,
