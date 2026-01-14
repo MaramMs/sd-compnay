@@ -1,0 +1,63 @@
+.contactForm {
+  background-color: #faf5ff;
+  padding: 96px;
+  .container {
+    max-width: 1200px;
+    margin: 0px auto;
+    border: 1px solid #8031cd;
+    .form {
+      margin: 100px 246px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      h2 {
+        background: linear-gradient(270deg, #8031cd 2.11%, #d328ec 73.53%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        line-height: 52px;
+        font-size: 36px;
+      }
+      .label {
+        color: #303a49;
+        font-weight: 500;
+        font-size: 16px;
+      }
+      .inputWrapper {
+        padding: 2px; // سماكة البوردر
+        border-radius: 12px;
+        background: linear-gradient(180deg, #251462 17.74%, #8031cd 82.26%);
+      }
+      .text,
+      .textarea {
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        background: #fff;
+        padding: 12px 14px;
+        outline: none;
+        height: 48px;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+
+      .textarea {
+        height: 157px;
+      }
+      button {
+        width: 100%;
+        background-color: #d328ec;
+        box-shadow: 0px 4px 12px 0px #a713ff33;
+        height: 48px;
+        border-radius: 12px;
+        padding: 8px 24px;
+        font-weight: 600;
+        color: #ffffff;
+        font-size: 16px;
+      }
+    }
+  }
+}
