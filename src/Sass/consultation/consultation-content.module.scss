@@ -1,0 +1,13 @@
+.consultation {
+  .ConsultationContent {
+    background-color: #FAF5FF;
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    padding: 64px 0px;
+    .container {
+      max-width: 1200px;
+      margin: 0px auto;
+    }
+  }
+}

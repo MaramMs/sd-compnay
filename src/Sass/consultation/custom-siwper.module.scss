@@ -1,0 +1,120 @@
+.slide {
+  display: flex;
+  justify-content: center;
+  background: #2f3b4a;
+  padding: 32px;
+  border-radius: 16px;
+  width: 100%;
+  .card {
+  max-width: 720px;
+  color: #fff;
+  position: relative;
+  padding-bottom: 48px;
+  .rating {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+
+  svg {
+    fill: #b44cff;
+    stroke: #b44cff;
+  }
+}
+.quote {
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 39px;
+  margin-bottom: 20px;
+}
+.footer {
+  h4 {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  span {
+    font-size: 12px;
+    color: #b0b7c3;
+  }
+}
+}
+}
+
+
+
+
+
+
+.testimonialSwiper {
+  max-width: 840px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: #2f3b4a;
+  // padding: 32px 32px 64px;
+  border-radius: 16px;
+  max-width: 720px;
+  width: 100%;
+  color: #fff;
+}
+
+.controls {
+  width: 100%;
+  padding: 0px 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  z-index: 9999;
+  cursor: pointer;
+}
+.pagination {
+  display: flex;
+  gap: 6px;
+}
+
+.pagination :global(.swiper-pagination-bullet) {
+  width: 24px;
+  height: 4px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.pagination :global(.swiper-pagination-bullet-active) {
+  background: linear-gradient(90deg, #b44cff, #ff5cff);
+    cursor: pointer;
+
+}
+
+/* arrows */
+.arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: #b44cff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
