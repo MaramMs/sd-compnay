@@ -1,7 +1,7 @@
 @use "../helpers/variables.scss" as *;
 .aboutContent {
   padding: 96px 0;
-  background-color: #FAF5FF;
+  background-color: #faf5ff;
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -197,4 +197,168 @@
   }
 }
 
+@media (max-width: 768px) {
+  .aboutContent {
+    padding: 64px 16px;
+    .container {
+      .boxOne {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        h2 {
+          font-size: 24px;
+        }
+        .p {
+          p {
+            font-weight: 16px;
+          }
+        }
+      }
 
+      .boxTwo {
+        .title {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          h2 {
+            font-size: 24px;
+            line-height: 52px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+        .transparency,
+        .innovation {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 32px;
+          .first {
+            position: relative;
+            z-index: 1;
+            img {
+              position: relative;
+                width: 258px;
+            height: 232px;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+               width: 258px;
+            height: 232px;
+              background: #d792ff;
+              top: -20px;
+              left: -20px;
+              z-index: -1;
+              border-top-left-radius: 78px;
+              border-top-right-radius: 14px;
+              border-bottom-left-radius: 14px;
+              border-bottom-right-radius: 14px;
+              overflow: hidden;
+            }
+          }
+          .transparencyContent,
+          .innovationContent {
+            h2 {
+              font-size: 20px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        
+        }
+        .line1 {
+          position: relative;
+          width: 600px;
+          height: 4px;
+          margin-left: auto;
+          background: linear-gradient(90deg, #251462 0%, #8031cd 100%);
+          &::before {
+            content: "";
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(180deg, #251462 17.74%, #8031cd 82.26%);
+            transform: translateY(-50%) rotate(45deg);
+          }
+        }
+          .innovationContent{
+            order: 2;
+          }
+        .second {
+          position: relative;
+          margin-left: auto;
+          z-index: 1;
+          order: 1;
+          img {
+            position: relative;
+            width: 258px;
+            height: 232px;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+          width: 258px;
+            height: 232px;
+            background: #d792ff;
+            top: -20px;
+            right: -20px;
+            z-index: -1;
+            border-top-left-radius: 14px;
+            border-top-right-radius: 48px;
+            border-bottom-left-radius: 14px;
+            border-bottom-right-radius: 14px;
+            overflow: hidden;
+          }
+        }
+        .line2 {
+          margin-right: auto;
+          position: relative;
+          background: linear-gradient(90deg, #251462 0%, #8031cd 100%);
+
+          width: 600px;
+          height: 4px;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 50%;
+
+            width: 28px;
+            height: 28px;
+
+            background: linear-gradient(180deg, #251462 17.74%, #8031cd 82.26%);
+
+            transform: translateY(-50%) rotate(45deg);
+          }
+        }
+        .three {
+          position: relative;
+          z-index: 1;
+          img {
+            position: relative;
+             width: 258px;
+            height: 232px;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            width: 258px;
+            height: 232px;
+            background: #d792ff;
+            top: -20px;
+            left: -20px;
+            z-index: -1;
+            border-top-left-radius: 48px;
+            border-top-right-radius: 14px;
+            border-bottom-left-radius: 14px;
+            border-bottom-right-radius: 14px;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
