@@ -42,6 +42,9 @@
     text-align: center;
     position: absolute;
     left: 104px;
+    @media (max-width: 768px) {
+
+}
 
     .title{
       display: flex;
@@ -81,3 +84,5 @@
     }
   }
 }
+
+

@@ -8,8 +8,8 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    // align-items: center;
   }
 
   .content {
@@ -39,21 +39,21 @@
     }
   }
 
-  .experiencesContainer {
-    display: flex;
-    gap: 30px;
-    width: 100%;
-    img {
-      position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        width: 80px;
-        height: 80px;
-        background-color: #d792ff;
-      }
-    }
-  }
+  // .experiencesContainer {
+  //   display: flex;
+  //   gap: 30px;
+  //   width: 100%;
+  //   img {
+  //     position: relative;
+  //     &::before {
+  //       content: "";
+  //       position: absolute;
+  //       width: 80px;
+  //       height: 80px;
+  //       background-color: #d792ff;
+  //     }
+  //   }
+  // }
 
   .experiences {
     display: flex;
@@ -69,7 +69,7 @@
     border-bottom: 1px solid #202122;
 
     span {
-      color: #452EB4;
+      color: #452eb4;
       font-family: "montserrat", sans-serif;
       font-size: 120px;
       font-weight: 400;
@@ -112,41 +112,39 @@
       overflow: hidden;
     }
     .last {
-  position: relative; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .logo {
-    position: absolute;
-    top: -38px;
-    left: -63px;
-    width: 88px;
-    height: 88px;
-    border-radius: 50%;
-    background-color: #202122;
-    z-index: 99;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 4px 14.7px 0px #007aff;
-    .logoImage {
-      width: 60px;
-      height: auto; 
-      object-fit: contain;
-      top: 0px;
-      left: 0px;
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
-      left: 11px;
-    top: 20px;
-}
-    }
-  
-}
 
-    
+      .logo {
+        position: absolute;
+        top: -38px;
+        left: -63px;
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        background-color: #202122;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 14.7px 0px #007aff;
+        .logoImage {
+          width: 60px;
+          height: auto;
+          object-fit: contain;
+          top: 0px;
+          left: 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 11px;
+          top: 20px;
+        }
+      }
+    }
+
     .last img:first-of-type {
       margin-right: 20px;
       position: absolute;
@@ -167,6 +165,66 @@
       border-bottom-left-radius: 24px;
       border-bottom-right-radius: 24px;
       overflow: hidden;
+    }
+  }
+
+
+
+  .experiencesContainer {
+    display: flex;
+    gap: 30px;
+    img {
+    width: 596px;
+    object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 64px 0px;
+    .container {
+      padding: 0px 16px;
+
+      .content {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 60px;
+        width: 100%;
+        // padding: 16px;
+
+        .title {
+          font-size: 28px;
+          font-weight: 700;
+        }
+
+        .des {
+          font-size: 16px;
+          line-height: 25px;
+          width: 100%;
+        }
+      }
+
+      .experiencesContainer {
+        flex-direction: column;
+        gap: 32px;
+        img {
+          margin: auto;
+        }
+        .experiences {
+          display: flex;
+          flex-direction: column;
+          .box {
+            span {
+              font-size: 64px;
+            }
+
+            p {
+              font-size: 36px;
+            }
+          }
+        }
+      }
     }
   }
 }

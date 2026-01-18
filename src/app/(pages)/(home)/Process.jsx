@@ -43,7 +43,7 @@ const Process = () => {
               A clear, organized methodology to turn your ideas into reality{" "}
             </p>
           </div>
-          <div className="grid! grid-cols-1! md:grid-cols-4! gap-6!">
+          <div className="grid! grid-cols-2! md:grid-cols-4! gap-4! md:gap-6">
             {processItems.map((item, index) => (
               <div key={index} className={style.processItem}>
                 <div className={style.processNumber}>

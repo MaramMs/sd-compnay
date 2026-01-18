@@ -1,11 +1,14 @@
-'use client'; 
 
-import React from "react";
+
+
+'use client';
+
+import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation"; 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react"; // استخدمنا Menu و X للهامبورغر
 import style from "@/Sass/navbar.module.scss";
 import logo from "../../public/assets/LOGO.svg";
 
@@ -21,6 +24,7 @@ const navItems = [
 
 const NavBar = () => {
   const pathname = usePathname();
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     <nav className={style.navbar}>
@@ -57,8 +61,40 @@ const NavBar = () => {
           </Button>
         </div>
 
-        {/* Mobile menu can be improved later the same way */}
+        {/* Mobile Hamburger */}
+        <div className={style.mobileMenuIcon} onClick={() => setMobileOpen(!mobileOpen)}>
+          {mobileOpen ? <X size={28} /> : <Menu size={28} />}
+        </div>
       </div>
+
+      {/* Mobile Menu */}
+      {mobileOpen && (
+        <div className={style.mobileMenu}>
+          {navItems.map((item) => {
+            const isActive = 
+              pathname === item.href || 
+              (item.href !== "/" && pathname.startsWith(item.href));
+
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`${style.mobileNavLink} ${isActive ? style.active : ""}`}
+                onClick={() => setMobileOpen(false)}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
+          <div className={style.mobileButtons}>
+            <Button>AR</Button>
+            <Button>
+              Start Your Project
+              <ArrowRight />
+            </Button>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

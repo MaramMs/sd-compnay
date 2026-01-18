@@ -17,6 +17,25 @@ const CustomSwiper = () => {
       }}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
+       breakpoints={{
+    0: {
+      slidesPerView: 1.1,   
+      spaceBetween: 16,
+    },
+    640: {
+      slidesPerView: 1.2,
+    },
+    768: {
+      slidesPerView: 2,   
+      spaceBetween: 24,
+    },
+    1024: {
+      slidesPerView: 3,   
+    },
+    1280: {
+      slidesPerView: 3.5,
+    },
+  }}
     >
       <SwiperSlide>
         <div className={style.slideContent}>

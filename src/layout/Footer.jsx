@@ -2,7 +2,6 @@ import React from "react";
 import style from "../Sass/footer.module.scss";
 import Image from "next/image";
 import logo from "../../public/assets/LOGO.svg";
-import { Facebook } from "lucide-react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 

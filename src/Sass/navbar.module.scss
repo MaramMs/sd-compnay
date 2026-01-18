@@ -6,7 +6,6 @@
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    // padding: 0 20px;
     height: 80px;
     display: flex;
     align-items: center;
@@ -69,4 +68,62 @@
 
         
     }   
+}
+
+
+.mobileMenuIcon {
+  display: none;
+  cursor: pointer;
+  color: $white_50;
+}
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  background-color: #303A49;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 50;
+
+  .mobileNavLink {
+    color: $white_50;
+    font-size: 18px;
+    padding: 12px 24px;
+    text-decoration: none;
+
+    &:hover,
+    &.active {
+      color: $primary_color;
+      font-weight: 600;
+    }
+  }
+
+  .mobileButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navLinks, .navButtons {
+    display: none;
+  }
+
+  .mobileMenuIcon {
+    display: block;
+  }
+
+  .mobileMenu {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .navbar{
+    padding: 0px 16px;
+  }
 }

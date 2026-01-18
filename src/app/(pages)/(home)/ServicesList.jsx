@@ -34,24 +34,20 @@ const servicesItems = [
 const ServicesList = () => {
   return (
     <div className={style.list}>
-        <div className={style.container}>
+      <div className={style.container}>
         {servicesItems.map((item, index) => (
-       <div className={style.items}>
-           <div key={index} className={style.item}>
+          <div key={index} className={style.item}>
             <div className={style.icon}>
               <Image src={item.icon} alt={item.title} />
             </div>
             <h3 className={style.title}>{item.title}</h3>
           </div>
-       </div>
         ))}
-
-      
       </div>
-         <div className={style.whatsapp}>
-      <FaWhatsapp size={38} color='white' />
 
-    </div>
+      <div className={style.whatsapp}>
+        <FaWhatsapp size={38} color="white" />
+      </div>
     </div>
   );
 };

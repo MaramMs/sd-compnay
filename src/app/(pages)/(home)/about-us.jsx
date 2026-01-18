@@ -6,6 +6,7 @@ import about_2 from "../../../../public/assets/about-2.png";
 import about_3 from "../../../../public/assets/about-3.png";
 import about_4 from "../../../../public/assets/about-4.png";
 import logo from "../../../../public/assets/LOGO.svg";
+import imageCollect from'../../../../public/assets/collect.png';
 
 const AboutUs = () => {
   return (
@@ -20,7 +21,8 @@ const AboutUs = () => {
           </p>
         </div>
         <div className={style.experiencesContainer}>
-          <div className={style.aboutPhotos}>
+          <Image src={imageCollect}/>
+          {/* <div className={style.aboutPhotos}>
             <div className={`${style.imgWrap} ${style.first}`}>
               <Image src={about_1} alt="about img" />
             </div>
@@ -38,7 +40,7 @@ const AboutUs = () => {
                 <Image src={logo} alt="logo" className={style.logoImage} />
               </div>
             </div>
-          </div>
+          </div> */}
           <div className={style.experiences}>
             <div className={style.box}>
               <span>8 +</span>
