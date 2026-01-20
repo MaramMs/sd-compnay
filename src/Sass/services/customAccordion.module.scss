@@ -51,6 +51,7 @@
           font-family: "montserrat", sans-serif;
           font-weight: 700;
           font-size: 20px;
+          cursor: pointer;
           .item {
             display: flex;
             flex-direction: column;
@@ -60,6 +61,9 @@
             font-weight: 700;
             font-size: 20px;
             transition: color 0.3s ease;
+            &:hover{
+              text-decoration: none;
+            }
           }
 
           span {
@@ -185,6 +189,156 @@
         font-size: 16px;
         font-weight: 600;
         font-family: "montserrat", sans-serif;
+        svg{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion {
+    padding: 40px 0px;
+    margin: 0px 16px;
+    .container {
+      gap: 48px;
+      h2 {
+        font-size: 28px;
+        text-align: center;
+      }
+      .customAccordion {
+        gap: 8px;
+        .accordionItem {
+          border-top-left-radius: 14px;
+          border-top-right-radius: 14px;
+          h3 {
+            &[data-state="open"] {
+              padding: 16px 24px;
+              button {
+                svg {
+                  width: 24px;
+                  height: 24px;
+                  color: #8031cd;
+                }
+              }
+            }
+
+            &[data-state="closed"] {
+              padding: 16px 24px;
+            }
+         
+          }
+
+          &[data-state="closed"] {
+            padding: 0px;
+          }
+          .title {
+            h4 {
+              font-size: 14px;
+            }
+
+            span {
+              font-size: 14px;
+            }
+            &[data-state="open"] {
+              // .title {
+              //   padding: 16px 24px;
+              // }
+              h4 {
+
+                font-size: 14px;
+                padding:0px;
+              }
+
+              span {
+                display: none;
+              }
+            }
+            &[data-state="closed"] {
+              h4 {
+                color: #303a49;
+                font-weight: 700;
+                font-size: 14px;
+              }
+              span {
+                color: #303a49;
+                font-weight: 400;
+                font-size: 16px;
+                font-family: "montserrat", sans-serif;
+              }
+            }
+          }
+
+          .content {
+            background-color: #faf5ff;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .contentItem {
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              h3 {
+              }
+              h4 {
+                position: relative;
+                color: #8031cd;
+                font-weight: 700;
+                font-size: 14px;
+                font-family: "montserrat", sans-serif;
+                text-transform: uppercase;
+                &:before {
+                  content: "";
+                  position: absolute;
+                  left: -11px;
+                  top: 7px;
+                  width: 6px;
+                  height: 6px;
+                  border-radius: 50%;
+                  background-color: #8031cd;
+                }
+              }
+
+              &:before {
+                content: "";
+                position: absolute;
+                left: -10px;
+                top: 7px;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #ef4444;
+              }
+            }
+            span {
+              width: max-content;
+              display: inline-block;
+              background-color: #a713ff1f;
+              padding: 4px 8px;
+              border-radius: 20px;
+              color: #303a49;
+              font-size: 12px;
+              font-weight: 400;
+              font-family: "montserrat", sans-serif;
+            }
+          }
+        }
+      }
+      .button {
+        gap: 16px;
+        margin: 48px 24.5px 0px 24.5px;
+        cursor: pointer;
+        p {
+          font-size: 14px;
+          line-height: 24px;
+          text-align: center;
+        }
+        button {
+          height: 48px;
+          font-size: 16px;
+        }
       }
     }
   }

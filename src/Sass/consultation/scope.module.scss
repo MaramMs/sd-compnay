@@ -70,26 +70,75 @@
       }
 
       ul {
-        color: #6b7280;
+  color: #6b7280;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 0; 
+}
+
+li {
+  font-size: 14px;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center; 
+  gap: 8px;
+}
+
+li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #8031cd;
+  border-radius: 50%;
+  flex-shrink: 0; 
+}
+
+      
+    }
+  }
+}
+
+
+@media (max-width:768px) {
+  .scope {
+    padding: 50px 16px;
+    .container {
+      gap: 32px;
+      .title{
+        h2 {
+          font-size: 28px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        width: 100%;
+        height: auto;
+        padding: 33px;
+        gap: 16px;
+        .icon {
+          width: 48px;
+          height: 48px;
+        }
+      .content{
         display: flex;
         flex-direction: column;
         gap: 8px;
-        li {
-          font-size: 14px;
-          font-weight: 400;
-          position: relative;
-          &:before {
-            position: absolute;
-            top: 31%;
-            left: -7%;
-
-            content: "";
-            width: 6px;
-            height: 6px;
-            background-color: #8031cd;
-            border-radius: 50%;
-          }
+          h2 {
+          font-size: 20px;
         }
+        p {
+          width: 100%;
+          font-size: 14px;
+        }
+      }
       }
     }
   }

@@ -16,7 +16,8 @@ const Scope = () => {
             <div className={style.icon}>
               <Settings color="#FCFCFC" size={32} />
             </div>
-            <h2>Tech Stack Audits</h2>
+         <div className={style.content}>
+             <h2>Tech Stack Audits</h2>
             <p>
               Comprehensive analysis and optimization of your technology
               infrastructure
@@ -26,6 +27,7 @@ const Scope = () => {
               <li>Performance audits</li>
               <li>Performance audits</li>
             </ul>
+         </div>
           </div>
 
            <div className={style.card}>

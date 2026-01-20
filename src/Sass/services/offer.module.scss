@@ -142,3 +142,78 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .offer {
+    .container {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .tools {
+        .toolsItem {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .offer {
+    padding: 50px 16px;
+    .container {
+      h2 {
+        font-size: 28px;
+      }
+      .cards {
+        grid-template-columns: 1fr;
+        .card {
+          
+          h3{
+            padding: 24px 0px;
+    
+
+            p{
+              font-size: 14px;
+              line-height: 25px;
+            }
+          }
+        }
+      }
+      .tools {
+        padding: 40px 24px;
+        .title{
+          flex-direction: column;
+          width:267px;
+          margin: auto;
+          h3{
+            font-size: 24px;
+          }
+          img{
+            width: 48px;
+            height: auto;
+          }
+        }
+        .toolsItem {
+          grid-template-columns: 1fr;
+          .item{
+            gap: 8px;
+             h4{
+            font-size: 20px;
+          }
+          p{
+            line-height: 30px;
+          }
+          .line{
+            &::after{
+              right: -4px;
+              width: 4px;
+              height: 4px;
+            }
+
+          }
+         }
+        }
+      }
+    }
+  }
+}

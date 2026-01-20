@@ -13,7 +13,7 @@
     position: absolute;
     inset: 0;
     z-index: 1;
-    filter: brightness(0.4);
+    filter: brightness(0.3);
   }
   .icon {
     position: absolute;
@@ -42,9 +42,7 @@
     text-align: center;
     position: absolute;
     left: 104px;
-    @media (max-width: 768px) {
 
-}
 
     .title{
       display: flex;
@@ -86,3 +84,36 @@
 }
 
 
+
+
+
+@media (max-width: 768px) {
+  .heroSection {
+    height: 520px;
+    .heroContent {
+      left: 16px;
+      top: 152px;
+      right: 16px;
+      gap: 71px;
+      .title {
+        gap: 16px;
+        h2 {
+          font-size: 36px;
+        }
+        p {
+          font-size: 16px;
+          width: 100%;
+          line-height: 30px;
+        }
+      }
+    }
+    button{
+      margin: auto;
+    }
+    .icon {
+      right: 24px;
+      width: 48px;
+      height: 48px;
+    }
+  }
+}

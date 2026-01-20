@@ -32,7 +32,8 @@ const ProjectContent = () => {
                 className="rounded-2xl h-49.25 object-cover "
               />
             </div>
-            <h3>E-Commerce Platform</h3>
+       <div className={style.contentCard}>
+             <h3>E-Commerce Platform</h3>
 
             <div className={style.categories}>
               <span>Retail</span>
@@ -51,6 +52,7 @@ const ProjectContent = () => {
               <span>View Project</span>
               <ArrowRight size={24} className="text-[#FCFCFC]!" />
             </div>
+       </div>
           </div>
 
           <div className={style.card}>
@@ -62,7 +64,8 @@ const ProjectContent = () => {
                 className="rounded-2xl h-49.25 object-cover "
               />
             </div>
-            <h3>E-Commerce Platform</h3>
+       <div className={style.contentCard}>
+             <h3>E-Commerce Platform</h3>
 
             <div className={style.categories}>
               <span>Retail</span>
@@ -81,9 +84,9 @@ const ProjectContent = () => {
               <span>View Project</span>
               <ArrowRight size={24} className="text-[#FCFCFC]!" />
             </div>
+       </div>
           </div>
-
-          <div className={style.card}>
+           <div className={style.card}>
             <div className={style.image}>
               <Image
                 src={feat1}
@@ -92,7 +95,8 @@ const ProjectContent = () => {
                 className="rounded-2xl h-49.25 object-cover "
               />
             </div>
-            <h3>E-Commerce Platform</h3>
+       <div className={style.contentCard}>
+             <h3>E-Commerce Platform</h3>
 
             <div className={style.categories}>
               <span>Retail</span>
@@ -111,9 +115,9 @@ const ProjectContent = () => {
               <span>View Project</span>
               <ArrowRight size={24} className="text-[#FCFCFC]!" />
             </div>
+       </div>
           </div>
-
-          <div className={style.card}>
+           <div className={style.card}>
             <div className={style.image}>
               <Image
                 src={feat1}
@@ -122,7 +126,8 @@ const ProjectContent = () => {
                 className="rounded-2xl h-49.25 object-cover "
               />
             </div>
-            <h3>E-Commerce Platform</h3>
+       <div className={style.contentCard}>
+             <h3>E-Commerce Platform</h3>
 
             <div className={style.categories}>
               <span>Retail</span>
@@ -141,6 +146,38 @@ const ProjectContent = () => {
               <span>View Project</span>
               <ArrowRight size={24} className="text-[#FCFCFC]!" />
             </div>
+       </div>
+          </div>
+           <div className={style.card}>
+            <div className={style.image}>
+              <Image
+                src={feat1}
+                width={568}
+                height={197}
+                className="rounded-2xl h-49.25 object-cover "
+              />
+            </div>
+       <div className={style.contentCard}>
+             <h3>E-Commerce Platform</h3>
+
+            <div className={style.categories}>
+              <span>Retail</span>
+              <span>Web & Mobile</span>
+            </div>
+
+            <div className={style.des}>
+              <div className={style.rate}>
+                <ArrowUpRight />
+              </div>
+
+              <p>+40% Conversion Rate</p>
+            </div>
+
+            <div className={style.viewProject}>
+              <span>View Project</span>
+              <ArrowRight size={24} className="text-[#FCFCFC]!" />
+            </div>
+       </div>
           </div>
         </div>
 

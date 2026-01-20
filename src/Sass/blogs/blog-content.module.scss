@@ -65,3 +65,44 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .blogContent {
+    padding: 48px 16px;
+    .container {
+      gap: 48px;
+      .content {
+        padding: 50px 16px;
+        .contentItem {
+          gap: 48px;
+          .title {
+            flex-direction: column;
+            gap: 16px;
+            .author {
+              h2 {
+                font-size: 16px;
+              }
+            }
+            .date {
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+          .des {
+            gap: 24px;
+            h3 {
+              font-size: 14px;
+              line-height: 27px;
+            }
+            p {
+              font-size: 14px;
+              line-height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

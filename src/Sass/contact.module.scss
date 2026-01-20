@@ -61,3 +61,20 @@
     }
   }
 }
+
+
+@media (max-width: 768px) {
+  .contactForm {
+    padding: 64px 16px;
+    .container {
+      padding: 50px 16px;
+      .form {
+        margin: 0px;
+        h2 {
+          font-size: 28px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}

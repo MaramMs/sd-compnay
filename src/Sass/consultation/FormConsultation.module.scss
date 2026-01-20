@@ -6,7 +6,7 @@
     margin: 0px auto;
     border: 1px solid #8031cd;
     .form {
-      margin: 100px 246px;
+      margin: 100px 246px 0px 246px;
       display: flex;
       flex-direction: column;
       gap: 24px;
@@ -86,6 +86,42 @@
         color: #ffffff;
         font-size: 16px;
       }
+    }
+    p{
+      color:#303A49;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: center;
+          margin-bottom: 100px;
+        }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contactForm {
+    padding: 48px 16px;
+    .container {
+      .form {
+        margin: 0px;
+        padding: 50px 16px 0px 16px;
+        gap: 16px;
+        img{
+          display: none;
+        }
+        h2 {
+          font-size: 28px;
+          line-height: 40px;
+        }
+
+    
+      }
+          p{
+          font-size: 12px;
+          line-height: 22px;
+          text-align: center;
+          margin-bottom: 50px;
+        }
     }
   }
 }

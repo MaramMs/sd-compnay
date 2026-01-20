@@ -36,7 +36,7 @@ const FormConsultation = () => {
           <h2>Book a Consultation</h2>
           <FieldSet>
             <FieldGroup>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-4">
                 <Field className="gap-4">
                   <FieldLabel htmlFor="city" className={style.label}>
                     Full Name *
@@ -127,7 +127,9 @@ const FormConsultation = () => {
 
             </Button>
           </Field>
+
         </div>
+          <p>* All fields are required. We respect your privacy and will never share your information.</p>
       </div>
     </div>
   );

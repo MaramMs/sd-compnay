@@ -70,3 +70,22 @@
   color: #8031cd;
   z-index: 1;
 }
+
+
+@media (max-width: 768px) {
+    .filterBtn {
+    display: none;
+    }
+    .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+    }
+}
+    .searchWrapper {
+        height: 52px;
+    }
+    .searchInput {
+        font-size: 14px;
+    }
+  

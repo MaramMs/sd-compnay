@@ -32,3 +32,57 @@ font-size: 16px;
         gap: 16px;
     }
 }
+
+
+
+@media (max-width:768px) {
+
+  .relatedBlog {
+    gap:16px;
+    .title {
+      h2 {
+        font-size: 20px;
+      }
+      Button{
+        height: 40px;
+        font-size: 12px;
+        background-color: transparent;
+        color:#D328EC;
+        box-shadow: none;
+      }
+    }
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+    .contentItem {
+      gap: 32px;
+      .title {
+        gap: 32px;
+        .author {
+          h2 {
+            font-size: 14px;
+          }
+        }
+        .date {
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+      .des {
+        gap: 16px;
+        h3 {
+          font-size: 18px;
+          line-height: 24px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+    }
+
+  }  

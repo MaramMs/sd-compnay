@@ -8,10 +8,8 @@ import FormConsultation from "./FormConsultation";
 const ConsultationContent = () => {
   return (
     <div className={style.ConsultationContent}>
-              <Scope />
+      <Scope />
 
-      {/* <div className={style.container}>
-      </div> */}
       <Expertise />
       <FormConsultation />
     </div>

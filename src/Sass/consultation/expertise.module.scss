@@ -88,3 +88,36 @@
     }
   }
 }
+
+
+@media (max-width:768px){
+  .expertise {
+    padding: 0px 16px;
+    &::after {
+      top: 50%;
+    }
+    .container {
+      .title{
+        text-align: center;
+        h2 {
+          font-size: 28px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 25px;
+        }
+      }
+      .cards {
+        gap:16px;
+        .card{
+          span{
+            font-size: 28px;
+          }
+          h5{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

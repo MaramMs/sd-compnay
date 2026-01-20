@@ -26,7 +26,7 @@ const ContactForm = () => {
           <h2>Contact Us</h2>
           <FieldSet>
             <FieldGroup>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-4">
                 <Field className="gap-4">
                   <FieldLabel htmlFor="city" className={style.label}>
                     First Name *
@@ -57,7 +57,7 @@ const ContactForm = () => {
               </div>
             </FieldGroup>
             <FieldGroup>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-4">
                 <Field className="gap-4">
                   <FieldLabel htmlFor="city" className={style.label}>
                     First Name *

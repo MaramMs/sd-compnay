@@ -14,8 +14,8 @@ export default function CustomSwiper() {
   return (
     <Swiper
       slidesPerView={1}
-      // loop
-      // autoplay={{ delay: 5000 }}
+      loop
+      autoplay={{ delay: 5000 }}
       modules={[Navigation, Pagination, Autoplay]}
       navigation={{
         prevEl: prevRef.current,
