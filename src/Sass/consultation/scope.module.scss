@@ -1,9 +1,10 @@
 .scope {
-  background-color: #ECEAF8;
+  background-color: #eceaf8;
   padding-top: 96px;
   .container {
-    max-width: 1200px;
-    margin: 0px auto;
+   max-width: 1232px; 
+    width: 100%;
+    margin: 0 auto; 
     display: flex;
     flex-direction: column;
     gap: 64px;
@@ -34,8 +35,8 @@
       margin-bottom: 80px;
     }
     .card {
-        width: 394px;
-        height: 421px;
+      width: 394px;
+      height: 421px;
       border-top: 0.8px solid #d792ff33;
       background-color: #faf5ff;
       box-shadow: 0px 4px 16.7px 0px #00438c1f;
@@ -70,43 +71,40 @@
       }
 
       ul {
-  color: #6b7280;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding-left: 0; 
-}
+        color: #6b7280;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-left: 0;
+      }
 
-li {
-  font-size: 14px;
-  font-weight: 400;
+      li {
+        font-size: 14px;
+        font-weight: 400;
 
-  display: flex;
-  align-items: center; 
-  gap: 8px;
-}
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
 
-li::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  background-color: #8031cd;
-  border-radius: 50%;
-  flex-shrink: 0; 
-}
-
-      
+      li::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: #8031cd;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
     }
   }
 }
 
-
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .scope {
     padding: 50px 16px;
     .container {
       gap: 32px;
-      .title{
+      .title {
         h2 {
           font-size: 28px;
         }
@@ -127,18 +125,18 @@ li::before {
           width: 48px;
           height: 48px;
         }
-      .content{
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
+        .content {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
           h2 {
-          font-size: 20px;
+            font-size: 20px;
+          }
+          p {
+            width: 100%;
+            font-size: 14px;
+          }
         }
-        p {
-          width: 100%;
-          font-size: 14px;
-        }
-      }
       }
     }
   }

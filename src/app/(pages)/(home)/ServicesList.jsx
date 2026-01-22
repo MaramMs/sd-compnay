@@ -45,9 +45,7 @@ const ServicesList = () => {
         ))}
       </div>
 
-      <div className={style.whatsapp}>
-        <FaWhatsapp size={38} color="white" />
-      </div>
+   
     </div>
   );
 };

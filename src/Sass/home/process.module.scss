@@ -3,8 +3,9 @@
   padding-top: 96px;
   background-color: #faf5ff;
   .container {
-    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 104px;
+    max-width: 1232px;
     padding-top: 112px;
     box-shadow: 0px 0px 16.7px 0px #00438c1f;
     border-radius: 48px;
@@ -122,7 +123,6 @@
           .icon {
             width: 48px;
             height: 48px;
-        
           }
           h4 {
             font-size: 40px;
@@ -130,7 +130,7 @@
         }
         .processContent {
           display: flex;
-        flex-direction: column;
+          flex-direction: column;
           gap: 12px;
           h3 {
             font-family: "montserrat", sans-serif;

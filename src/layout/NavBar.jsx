@@ -1,6 +1,4 @@
 
-
-
 'use client';
 
 import React, { useState } from "react";
@@ -8,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation"; 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Menu, X } from "lucide-react"; // استخدمنا Menu و X للهامبورغر
+import { ArrowRight, Menu, X } from "lucide-react";
 import style from "@/Sass/navbar.module.scss";
 import logo from "../../public/assets/LOGO.svg";
 
@@ -17,8 +15,8 @@ const navItems = [
   { label: "About", href: "/about-us" },
   { label: "Services", href: "/services" },
   { label: "Projects", href: "/projects" },
-  { label: "Blogs", href: "/blogs" },
-  { label: "Consultation", href: "/consultation" },
+  // { label: "Blogs", href: "/blogs" },
+  // { label: "Consultation", href: "/consultation" },
   { label: "Contact", href: "/contact" },
 ];
 

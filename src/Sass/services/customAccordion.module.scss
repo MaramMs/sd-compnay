@@ -2,8 +2,9 @@
   padding: 80px;
   background-color: #ffffff;
   .container {
-    margin: 0px auto;
-    max-width: 1200px;
+    max-width: 1232px; 
+    width: 100%;
+    margin: 0 auto; 
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -61,7 +62,7 @@
             font-weight: 700;
             font-size: 20px;
             transition: color 0.3s ease;
-            &:hover{
+            &:hover {
               text-decoration: none;
             }
           }
@@ -189,7 +190,7 @@
         font-size: 16px;
         font-weight: 600;
         font-family: "montserrat", sans-serif;
-        svg{
+        svg {
           cursor: pointer;
         }
       }
@@ -227,7 +228,6 @@
             &[data-state="closed"] {
               padding: 16px 24px;
             }
-         
           }
 
           &[data-state="closed"] {
@@ -246,9 +246,8 @@
               //   padding: 16px 24px;
               // }
               h4 {
-
                 font-size: 14px;
-                padding:0px;
+                padding: 0px;
               }
 
               span {

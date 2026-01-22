@@ -1,18 +1,31 @@
 @use "@/Sass/helpers/variables.scss" as *;
 .heroSection {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: 607px;
+  // height: calc(100vh - 80px);
   overflow: hidden;
-
-  .imgHero {
-    object-fit: cover;
     position: relative;
-    filter: brightness(0.3);
-  }
+    background-image: url("../../../public/assets/mainHome.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // border-radius: 48px;
+    // padding: 60px 64px;
+    // display: flex;
+    // flex-direction: column;
+    gap: 64px;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(1, 13, 51, 0.72);
+      z-index: 0;
+    }
+
 
   .heroContent {
     font-family: "montserrat", sans-serif;
@@ -25,6 +38,7 @@
     text-align: center;
     padding: 0 20px;
     color: $white_50;
+  
 
     .item {
       display: flex;
@@ -62,6 +76,22 @@
       font-size: 16px;
       font-weight: 600;
     }
+  }
+
+     .icon {
+    position: fixed;
+    z-index: 999;
+    top: 650px;
+    right: 90px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #25d366;
+    box-shadow: 0px 4px 17.3px 0px #2c2d2f80;
+    cursor: pointer;
   }
 }
 

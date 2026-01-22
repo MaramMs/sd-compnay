@@ -31,7 +31,6 @@ const ServicesContent = () => {
           </div>
         </div>
         <div className={style.servicesItems}>
-          <div className={style.servicesItems}>
             {services.map((service) => (
               <Link
                 key={service.id}
@@ -41,7 +40,6 @@ const ServicesContent = () => {
                 <ServiceCard />
               </Link>
             ))}
-          </div>
         </div>
       </div>
     </div>

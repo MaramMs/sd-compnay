@@ -6,6 +6,7 @@ import feat1 from "../../../../public/assets/feat1.jpg";
 
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const ProjectContent = () => {
   return (
@@ -173,10 +174,12 @@ const ProjectContent = () => {
               <p>+40% Conversion Rate</p>
             </div>
 
+          <Link href={'/projects/project-details'} className={style.viewProjectLink}>
             <div className={style.viewProject}>
               <span>View Project</span>
               <ArrowRight size={24} className="text-[#FCFCFC]!" />
             </div>
+          </Link>
        </div>
           </div>
         </div>

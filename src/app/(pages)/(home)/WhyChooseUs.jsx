@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
               We deliver exceptional value through our expertise and dedication
             </p>
           </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-[64px]">
   <div className={style.card}>
     <h3>Dedicated Expert Team</h3>
     <p>

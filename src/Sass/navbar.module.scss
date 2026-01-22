@@ -3,9 +3,20 @@
     background-color: #303A49;
 }
 
+// .container{
+//     max-width: 1200px;
+//     margin: 0  104px;
+//     height: 80px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1232px; // 1440 - (104 * 2) = 1232px
+    width: 100%;
+    margin: 0 auto; // هيك بيصير في الوسط
+    // padding: 0 104px; // الـ padding بدل الـ margin
     height: 80px;
     display: flex;
     align-items: center;

@@ -15,15 +15,16 @@ const Hero = ({ heroImage, title }) => {
         className={style.imgHero}
         priority
       />
-      <div className={style.icon}>
-        <FaWhatsapp color="white" size={38} />
-      </div>
+   
       <div className={style.heroContent}>
         <h1>{title}</h1>
         <Button>
           Start Your Project
           <ArrowRight />
         </Button>
+      </div>
+         <div className={style.icon}>
+        <FaWhatsapp color="white" size={38} />
       </div>
     </div>
   );

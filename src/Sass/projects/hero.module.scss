@@ -1,0 +1,158 @@
+@use "@/Sass/helpers/variables.scss" as *;
+
+.heroSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 607px;
+//   background-color: #303A49;
+  overflow: hidden;
+  .imgHero {
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    filter: brightness(0.3);
+  }
+  .icon {
+    position: absolute;
+    z-index: 5;
+    bottom: 0px;
+    right: 158px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #25d366;
+    box-shadow: 0px 4px 17.3px 0px #2c2d2f80;
+    cursor: pointer;
+  }
+
+  .heroContent {
+    font-family: "montserrat", sans-serif;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: left;
+    text-align: center;
+    position: absolute;
+    left: 104px;
+
+
+.categories {
+  display: flex;
+  gap: 12px;
+}
+
+.category,
+.year {
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 999px;
+  color: #fff;
+  background: rgba(140, 90, 180, 0.32);
+  backdrop-filter: blur(6px);
+}
+
+.category::before,
+.year::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.45),
+    rgba(255, 255, 255, 0.15)
+  );
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+
+
+
+    .title{
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      h2{
+        color: #FCFCFC;
+        font-size: 48px;
+        font-weight: 700;
+        text-align: left;
+      }
+      p{
+        color: #FCFCFCD9;
+        line-height: 28px;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        width: 50%;
+      }
+    }
+
+    button {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      background-color: $primary_color;
+box-shadow: 0px 4px 12px 0px #A713FF33;
+      height: 48px;
+      padding: 8px 24px;
+      border-radius: 12px;
+      border: none;
+      color: $white_50;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      max-width: max-content;
+    }
+  }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .heroSection {
+    height: 520px;
+    .heroContent {
+      left: 16px;
+      top: 152px;
+      right: 16px;
+      gap: 71px;
+      .title {
+        gap: 16px;
+        h2 {
+          font-size: 36px;
+        }
+        p {
+          font-size: 16px;
+          width: 100%;
+          line-height: 30px;
+        }
+      }
+    }
+    button{
+      margin: auto;
+    }
+    .icon {
+      right: 24px;
+      width: 48px;
+      height: 48px;
+    }
+  }
+}

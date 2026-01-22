@@ -1,0 +1,227 @@
+.projectReview {
+  background-color: #faf5ff;
+  padding: 96px 0px;
+  .container {
+   max-width: 1232px; 
+    width: 100%;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    .reviewContent {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      .title {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        h2 {
+          font-size: 36px;
+          font-weight: 700;
+          background: linear-gradient(270deg, #8031cd 2.11%, #d328ec 73.53%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        p {
+          color: #303a49;
+          font-size: 24px;
+          line-height: 40px;
+          font-weight: 400;
+        }
+      }
+      .reviewText {
+        background-color: #eceaf8;
+        border-radius: 16px;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .reviewItem {
+          display: flex;
+          gap: 16px;
+          align-items: start;
+          svg {
+            margin-top: 4px;
+          }
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            h3 {
+              font-size: 20px;
+              font-weight: 500;
+              color: #303a49;
+            }
+            p {
+              font-size: 16px;
+              font-weight: 400;
+              color: #251462;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    .testimonialSwiper {
+      //   width: 100%;
+      max-width: 600px;
+      //   margin: 0 auto;
+      padding: 0; // Remove any default padding
+
+      // Ensure slides don't have extra spacing
+      :global(.swiper-wrapper) {
+        align-items: stretch;
+      }
+
+      :global(.swiper-slide) {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .slide {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 0;
+      //   width: 100%;
+    }
+
+    .card {
+      position: relative;
+      //   width: 100%;
+      height: 420px;
+      border-radius: 16px;
+      overflow: hidden; // Add this back to prevent image overflow
+    }
+
+    // .image {
+    //   object-fit: cover;
+    // }
+
+    .reviewImage {
+      width: 100%;
+      position: relative;
+    }
+
+    .controls {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .pagination {
+      display: flex;
+      gap: 6px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pagination :global(.swiper-pagination-bullet) {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #4a5565;
+      opacity: 1;
+    }
+
+    .pagination :global(.swiper-pagination-bullet-active) {
+      width: 32px;
+      height: 8px;
+      border-radius: 26843500px;
+      background: linear-gradient(90deg, #b44cff, #ff5cff);
+    }
+
+    // /* arrows */
+    .arrow {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: none;
+      background: transparent;
+      color: #b44cff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .arrow:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.1);
+    }
+
+   
+  }
+}
+
+
+
+
+ @media (max-width: 768px) {
+      .projectReview{
+        padding: 64px 16px;
+  .container{
+        grid-template-columns: 1fr;
+        gap: 64px;
+        .reviewContent {
+          .title {
+            h2 {
+              font-size: 28px;
+              line-height: 40px;
+            }
+            p {
+              font-size: 16px;
+              line-height: 28px;
+            }
+          }
+          .reviewText {
+            padding: 24px;
+            .reviewItem {
+              .text {
+                h3 {
+                  font-size: 18px;
+                }
+                p {
+                  font-size: 14px;
+                  line-height: 22px;
+                }
+              }
+            }
+          }
+        }
+        .testimonialSwiper {
+          max-width:358px;;
+               .slide {
+        padding: 0px;
+        .card {
+          padding: 32px 16px;
+          height: 357px;
+          gap: 16px;
+          img{
+           object-fit: cover;
+            max-width: 100%;
+          }
+          .quote {
+            font-size: 16px;
+            line-height: 39px;
+          }
+        }
+      }
+      .controls {
+        padding: 0px 12px;
+        bottom: 25px;
+      }
+      }
+      }
+        }
+     
+    
+  
+}
+  

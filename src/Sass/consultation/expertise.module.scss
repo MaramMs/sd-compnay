@@ -18,13 +18,14 @@
     pointer-events: none;
   }
   .container {
-    position: relative; 
-    z-index: 1; 
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     gap: 48px;
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1232px; 
+    width: 100%;
+    margin: 0 auto; 
     .title {
       display: flex;
       flex-direction: column;
@@ -89,15 +90,14 @@
   }
 }
 
-
-@media (max-width:768px){
+@media (max-width: 768px) {
   .expertise {
     padding: 0px 16px;
     &::after {
       top: 50%;
     }
     .container {
-      .title{
+      .title {
         text-align: center;
         h2 {
           font-size: 28px;
@@ -108,12 +108,12 @@
         }
       }
       .cards {
-        gap:16px;
-        .card{
-          span{
+        gap: 16px;
+        .card {
+          span {
             font-size: 28px;
           }
-          h5{
+          h5 {
             font-size: 14px;
           }
         }

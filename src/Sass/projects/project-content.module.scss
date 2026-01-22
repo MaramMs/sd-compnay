@@ -1,9 +1,10 @@
-@use '../helpers/variables.scss' as *;
+@use "../helpers/variables.scss" as *;
 .projectContent {
   padding: 96px 0;
   .container {
-    margin: 0px auto;
-    max-width: 1200px;
+   max-width: 1232px; 
+    width: 100%;
+    margin: 0 auto; 
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -18,111 +19,108 @@
         font-size: 36px;
         font-family: "montserrat", sans-serif;
       }
-      p{
-        color: #303A49;
+      p {
+        color: #303a49;
         font-weight: 400;
         font-size: 24px;
         line-height: 40px;
       }
     }
-    .cards{
+    .cards {
       display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 16px;
-       .card {
-      background: linear-gradient(180deg, #251462 17.74%, #8031cd 82.26%);
+      .card {
+        background: linear-gradient(180deg, #251462 17.74%, #8031cd 82.26%);
 
-      border-radius: 32px;
-      border: 1px solid #ffffff1a;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      height: 100%;
-      .image {
-        border-radius: 12px;
-        height: 197px;
-        object-fit: cover;
-      }
-
-      h3 {
-        color: white;
-        line-height: 48px;
-        font-weight: 600;
-        font-size: 24px;
-        font-family: "montserrat", sans-serif;
-      }
-      .categories {
+        border-radius: 32px;
+        border: 1px solid #ffffff1a;
+        padding: 20px;
         display: flex;
+        flex-direction: column;
         gap: 24px;
-        span {
-          background: #a713ff1f;
-          border-radius: 20px;
-          padding: 12px 24px;
-          color: $white_50;
-          font-size: 14px;
-          line-height: 20px;
-          font-weight: 400;
-          font-family: "montserrat", sans-serif;
-          outline: 1px solid #ffffff2b;
+        height: 100%;
+        .image {
+          border-radius: 12px;
+          height: 197px;
+          object-fit: cover;
         }
-      }
-      .des {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        padding: 16px 0;
-        border-bottom: 1px solid #d792ff4d;
-        .rate {
+
+        h3 {
+          color: white;
+          line-height: 48px;
+          font-weight: 600;
+          font-size: 24px;
+          font-family: "montserrat", sans-serif;
+        }
+        .categories {
           display: flex;
-          justify-content: center;
+          gap: 24px;
+          span {
+            background: #a713ff1f;
+            border-radius: 20px;
+            padding: 12px 24px;
+            color: $white_50;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            font-family: "montserrat", sans-serif;
+            outline: 1px solid #ffffff2b;
+          }
+        }
+        .des {
+          display: flex;
           align-items: center;
-          width: 32.25px;
-          height: 32.25px;
-          background-color: #b3a9e0;
-          border-radius: 50%;
-          color: $white_50;
+          gap: 16px;
+          padding: 16px 0;
+          border-bottom: 1px solid #d792ff4d;
+          .rate {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32.25px;
+            height: 32.25px;
+            background-color: #b3a9e0;
+            border-radius: 50%;
+            color: $white_50;
+          }
+          p {
+            color: $white_50;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 27px;
+            font-family: "montserrat", sans-serif;
+          }
         }
-        p {
-          color: $white_50;
-          font-size: 16px;
-          font-weight: 600;
-          line-height: 27px;
-          font-family: "montserrat", sans-serif;
-        }
-      }
-      .viewProject {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        gap: 10px;
-        span {
-          color: $white_50;
-          font-size: 16px;
-          font-weight: 600;
-          line-height: 27px;
-          font-family: "montserrat", sans-serif;
+        .viewProject {
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          gap: 10px;
+          span {
+            color: $white_50;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 27px;
+            font-family: "montserrat", sans-serif;
+          }
         }
       }
     }
-    }
-    .button{
-      background-color:  #D328EC;
-box-shadow: 0px 4px 12px 0px #A713FF33;
-height: 48px;
-padding: 8px 24px;
-border-radius: 12px;
-color: #FFFFFF;
-font-weight: 600;
-font-size: 16px;
-        font-family: "montserrat", sans-serif;
-        cursor: pointer;
-
-
+    .button {
+      background-color: #d328ec;
+      box-shadow: 0px 4px 12px 0px #a713ff33;
+      height: 48px;
+      padding: 8px 24px;
+      border-radius: 12px;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 16px;
+      font-family: "montserrat", sans-serif;
+      cursor: pointer;
     }
   }
 }
-
 
 @media (max-width: 768px) {
   .projectContent {
@@ -147,47 +145,47 @@ font-size: 16px;
           .image {
             width: 139px;
           }
-        .contentCard{
-          display: flex;
-          flex-direction: column;
-          gap: 12px;
+          .contentCard {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
             h3 {
-            font-size: 14px;
-          }
-          .categories{
-            gap: 16px;
-            span {
-              padding: 4px 8px;
-              font-size: 12px;
-              width: max-content;
+              font-size: 14px;
             }
-          }
-          .des {
-            align-items: flex-start;
-            gap: 4px;
-            .rate {
-              width: 24px;
-              height: 24px;
-              font-size: 12px;
+            .categories {
+              gap: 16px;
+              span {
+                padding: 4px 8px;
+                font-size: 12px;
+                width: max-content;
+              }
             }
-            p{
-              font-size: 12px;
-              width: max-content;
+            .des {
+              align-items: flex-start;
+              gap: 4px;
+              .rate {
+                width: 24px;
+                height: 24px;
+                font-size: 12px;
+              }
+              p {
+                font-size: 12px;
+                width: max-content;
+              }
             }
-          } 
-          .viewProject {
-            gap: 4px;
-            span {
-              font-size: 12px;
-            }
-            svg{
-              width: 16px;
-              height: 16px;
+            .viewProject {
+              gap: 4px;
+              span {
+                font-size: 12px;
+              }
+              svg {
+                width: 16px;
+                height: 16px;
+              }
             }
           }
         }
       }
     }
-  }
   }
 }

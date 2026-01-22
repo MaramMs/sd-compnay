@@ -1,0 +1,132 @@
+.technologiesUsed {
+  background-color: #202122;
+  padding: 48px 0px;
+  .container {
+   max-width: 1232px; 
+    width: 100%;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    .title {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        font-size: 36px;
+        font-weight: 700;
+        background: linear-gradient(270deg, #8031cd 2.11%, #d328ec 73.53%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      p {
+        color: #6b7280;
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 400;
+        text-align: center;
+        width: 60%;
+      }
+    }
+
+    .techCards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      justify-items: center;
+      .techCard {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        background-color: #ffffff0d;
+        border-radius: 16px;
+        padding: 16px 32px;
+        .cardHeader {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          h4 {
+            color: #fcfcfc;
+            font-size: 24px;
+            font-weight: 600;
+          }
+
+          span {
+            background-color: #a713ff1f;
+            border-radius: 20px;
+            padding: 4px 8px;
+            color: #fcfcfc;
+            font-size: 12px;
+            font-weight: 400;
+            outline: 1px solid #fcfcfc8f;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        p {
+          color: #e5e7eb;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+ @media (max-width: 768px) {
+    .technologiesUsed {
+        margin:64px 0px;
+        .container {
+            padding:0px 16px;
+        .title {
+            gap:24px;
+            h2 {
+            font-size: 28px;
+            line-height: 36px;
+            }
+            p {
+            width: 100%;
+            font-size: 14px;
+            line-height: 25px;
+            }
+        }
+    
+        .techCards {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            .techCard {
+            padding: 16px;
+            .cardHeader {
+                display:flex;
+                flex-direction: column;
+                gap:16px;
+                h4 {
+                font-size: 20px;
+                }
+                span {
+                font-size: 12px;
+                padding: 2px 6px;
+                }
+            }
+            p {
+                font-size: 14px;
+                line-height: 26px;
+            }
+            }
+        }
+        }
+    }
+
+
+ }

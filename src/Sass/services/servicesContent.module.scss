@@ -1,79 +1,68 @@
-@use '../helpers/variables.scss' as *;
-.servicesContent{
-    padding: 96px;
-    .container{
-        display: flex;
-        flex-direction: column;
-        gap: 60px;
-    max-width: 1200px;
-    margin: 0px auto;
-    .contentTitle{
-display: grid;
-grid-template-columns: repeat(2,1fr);
-h2{
-    background: linear-gradient(270deg, #8031CD 2.11%, #D328EC 73.53%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 36px;
-    font-family: "montserrat", sans-serif;
-    font-weight: 700;
-
-}
-.des{
+@use "../helpers/variables.scss" as *;
+.servicesContent {
+  padding: 96px;
+  .container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    p{
-    color: #303A49;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 40px;
+    gap: 60px;
+   max-width: 1232px; 
+    width: 100%;
+    margin: 0 auto; 
+    .contentTitle {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      h2 {
+        background: linear-gradient(270deg, #8031cd 2.11%, #d328ec 73.53%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 36px;
         font-family: "montserrat", sans-serif;
-
-}
-}
+        font-weight: 700;
+      }
+      .des {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        p {
+          color: #303a49;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 40px;
+          font-family: "montserrat", sans-serif;
+        }
+      }
     }
-    .servicesItems{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 16px;
+    .servicesItems {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
     }
+  }
 }
-}
-
 
 @media (max-width: 768px) {
-.servicesContent{
+  .servicesContent {
     padding: 64px 16px;
-    .container{
-     
-    .contentTitle{
-display: grid;
-grid-template-columns: repeat(1,1fr);
-gap:16px;
-h2{
-    
-    font-size: 28px;
-    
-
-}
-.des{
-   
-    p{
-  
-    font-size: 16px;
-    line-height: 25px;
-
-}
-}
-    }
-    .servicesItems{
+    .container {
+      .contentTitle {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 16px;
+        h2 {
+          font-size: 28px;
+        }
+        .des {
+          p {
+            font-size: 16px;
+            line-height: 25px;
+          }
+        }
+      }
+      .servicesItems {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+      }
     }
-}
-}
-
-
+  }
 }

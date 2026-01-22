@@ -24,7 +24,7 @@ const ContactForm = () => {
         <div className={style.form}>
           <Image src={logo} />
           <h2>Contact Us</h2>
-          <FieldSet>
+          <FieldSet className='border-0'>
             <FieldGroup>
               <div className="grid md:grid-cols-2 gap-4">
                 <Field className="gap-4">
