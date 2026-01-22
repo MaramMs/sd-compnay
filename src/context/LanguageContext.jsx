@@ -12,7 +12,10 @@ export function LanguageProvider({ children }) {
 
   useEffect(() => {
     setMounted(true);
-    const savedLanguage = localStorage.getItem("i18nextLng") || "en";
+    let savedLanguage = localStorage.getItem("i18nextLng") || "en";
+    // Normalize language code (e.g., ar-EG -> ar)
+    const baseLang = savedLanguage.split("-")[0];
+    savedLanguage = baseLang;
     i18n.changeLanguage(savedLanguage);
     setIsRTL(savedLanguage === "ar");
     document.documentElement.lang = savedLanguage;

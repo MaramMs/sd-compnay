@@ -26,7 +26,20 @@ i18n
     detection: {
       order: ["localStorage", "navigator"],
       caches: ["localStorage"],
+      lookupLocalStorage: "i18nextLng",
     },
   });
+
+// Normalize language codes (e.g., ar-EG -> ar, en-US -> en)
+i18n.on("languageChanged", (lng) => {
+  const baseLng = lng.split("-")[0]; // Get base language code
+  if (baseLng !== lng && i18n.hasResourceBundle(baseLng, "common")) {
+    i18n.changeLanguage(baseLng, (err) => {
+      if (!err) {
+        localStorage.setItem("i18nextLng", baseLng);
+      }
+    });
+  }
+});
 
 export default i18n;
