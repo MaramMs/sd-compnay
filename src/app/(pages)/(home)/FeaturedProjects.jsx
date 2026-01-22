@@ -5,20 +5,23 @@ import Image from "next/image";
 import feat1 from "../../../../public/assets/feat1.jpg";
 import feat2 from "../../../../public/assets/feat2.jpg";
 import feat3 from "../../../../public/assets/feat3.jpg";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { useTranslation } from "react-i18next";
+import { useLanguage } from "@/context/LanguageContext";
 const FeaturedProjects = () => {
+  const { t } = useTranslation();
+  const { isRTL } = useLanguage();
+  console.log(isRTL, "rtl");
   return (
     <div className={style.featuredProjects}>
       <div className={style.container}>
         <div className={style.contentTitle}>
-          <h3>Featured Projects</h3>
-          <p>
-            Real results from clients who achieved impressive digital success
-          </p>
+          <h3>{t("projects.title")}</h3>
+          <p>{t("projects.subtitle")}</p>
         </div>
         <div className={style.gridDesktop}>
           <div className={style.grid}>
@@ -48,9 +51,12 @@ const FeaturedProjects = () => {
                 </div>
 
                 <div className={style.viewProject}>
-                  <span>View Project</span>
-                  <ArrowRight size={24} className="text-[#FCFCFC]!" />
-                </div>
+                  <span>{t("projects.viewProject")}</span>
+  {isRTL ? (
+                      <ArrowLeft size={24} className="text-[#FCFCFC]!" />
+                    ) : (
+                      <ArrowRight size={24} className="text-[#FCFCFC]!" />
+                    )}                </div>
               </div>
             </div>
             <div className={style.gridTwo}>
@@ -80,8 +86,12 @@ const FeaturedProjects = () => {
                   </div>
 
                   <div className={style.viewProject}>
-                    <span>View Project</span>
-                    <ArrowRight size={24} className="text-[#FCFCFC]!" />
+                    <span> {t("projects.viewProject")}</span>
+                    {isRTL ? (
+                      <ArrowLeft size={24} className="text-[#FCFCFC]!" />
+                    ) : (
+                      <ArrowRight size={24} className="text-[#FCFCFC]!" />
+                    )}
                   </div>
                 </div>
               </div>
@@ -113,8 +123,12 @@ const FeaturedProjects = () => {
                   </div>
 
                   <div className={style.viewProject}>
-                    <span>View Project</span>
-                    <ArrowRight size={24} className="text-[#FCFCFC]!" />
+                    <span> {t("projects.viewProject")}</span>
+                    {isRTL ? (
+                      <ArrowLeft size={24} className="text-[#FCFCFC]!" />
+                    ) : (
+                      <ArrowRight size={24} className="text-[#FCFCFC]!" />
+                    )}{" "}
                   </div>
                 </div>
               </div>
@@ -124,12 +138,12 @@ const FeaturedProjects = () => {
 
         <div className={style.gridMobile}>
           <Swiper
-modules={[Mousewheel]}       
-     spaceBetween={16}
+            modules={[Mousewheel]}
+            spaceBetween={16}
             slidesPerView={1.2}
-               mousewheel={{
-        forceToAxis: true,
-      }}
+            mousewheel={{
+              forceToAxis: true,
+            }}
           >
             <SwiperSlide>
               <div className={style.card}>
@@ -157,14 +171,18 @@ modules={[Mousewheel]}
                 </div>
 
                 <div className={style.viewProject}>
-                  <span>View Project</span>
-                  <ArrowRight size={24} className="text-[#FCFCFC]!" />
+                  <span> {t("projects.viewProject")}</span>
+                  {isRTL ? (
+                    <ArrowLeft size={24} className="text-[#FCFCFC]!" />
+                  ) : (
+                    <ArrowRight size={24} className="text-[#FCFCFC]!" />
+                  )}{" "}
                 </div>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-               <div className={style.card}>
+              <div className={style.card}>
                 <div className={style.image}>
                   <Image
                     src={feat1}
@@ -189,14 +207,18 @@ modules={[Mousewheel]}
                 </div>
 
                 <div className={style.viewProject}>
-                  <span>View Project</span>
-                  <ArrowRight size={24} className="text-[#FCFCFC]!" />
+                  <span> {t("projects.viewProject")}</span>
+                  {isRTL ? (
+                    <ArrowLeft size={24} className="text-[#FCFCFC]!" />
+                  ) : (
+                    <ArrowRight size={24} className="text-[#FCFCFC]!" />
+                  )}{" "}
                 </div>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-               <div className={style.card}>
+              <div className={style.card}>
                 <div className={style.image}>
                   <Image
                     src={feat1}
@@ -221,8 +243,12 @@ modules={[Mousewheel]}
                 </div>
 
                 <div className={style.viewProject}>
-                  <span>View Project</span>
-                  <ArrowRight size={24} className="text-[#FCFCFC]!" />
+                  <span> {t("projects.viewProject")}</span>
+                  {isRTL ? (
+                    <ArrowLeft size={24} className="text-[#FCFCFC]!" />
+                  ) : (
+                    <ArrowRight size={24} className="text-[#FCFCFC]!" />
+                  )}{" "}
                 </div>
               </div>
             </SwiperSlide>

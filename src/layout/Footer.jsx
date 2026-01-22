@@ -1,12 +1,15 @@
+'use client'
 import React from "react";
 import style from "../Sass/footer.module.scss";
 import Image from "next/image";
 import logo from "../../public/assets/LOGO.svg";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 
 const Footer = () => {
+  const {t} = useTranslation();
   return (
     <div className={style.footer}>
       <div className={style.container}>
@@ -14,8 +17,7 @@ const Footer = () => {
           <div className={style.contentInfo}>
             <Image src={logo} width={78} height={59} />
             <p>
-              We build exceptional software that helps businesses grow in the
-              digital age
+             {t("footer.description")}
             </p>
             <div className={style.social}>
               <div className={style.icon}>
@@ -34,27 +36,29 @@ const Footer = () => {
           </div>
 
           <div className={style.company}>
-            <h2>Company</h2>
+            <h2>
+              {t("footer.company.title")}
+            </h2>
             <ul>
-              <li>About us</li>
-              <li>Our Services</li>
-              <li>Our Projects</li>
-              <li>Consultation</li>
+              <li>{t('footer.company.about')}</li>
+              <li>{t('footer.company.services')}</li>
+              <li>{t('footer.company.projects')}</li>
+              <li>{t('footer.company.Consultation')}</li>
             </ul>
           </div>
             <div className={style.services}>
-            <h2>Services</h2>
+            <h2>{t('footer.services.title')}</h2>
             <ul>
-              <li>Web Development</li>
-              <li>Mobile Apps</li>
-              <li>UI/UX Design</li>
-              <li>Tech Consulting</li>
+              <li>{t('footer.services.web')}</li>
+              <li>{t('footer.services.mobile')}</li>
+              <li>{t('footer.services.design')}</li>
+              <li>{t('footer.services.tech')}</li>
             </ul>
           </div>
             <div className={style.resources}>
            <div className={style.blog}>
-             <h2>Resources</h2>
-           <span>Blog</span>
+             <h2>{t('footer.resource.title')}</h2>
+           <span>{t('footer.resource.blog')}</span>
            </div>
            <div className={style.contact}>
             <div className={style.contactItem}>

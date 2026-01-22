@@ -1,23 +1,25 @@
+"use client";
 import React from "react";
-import style  from "../../../Sass/home/buildProduct.module.scss";
+import style from "../../../Sass/home/buildProduct.module.scss";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { useLanguage } from "@/context/LanguageContext";
 
 const BuildProduct = () => {
+  const { t } = useTranslation();
+  const { isRTL } = useLanguage();
   return (
     <div className={style.buildProduct}>
       <div className={style.container}>
         <div className={style.content}>
           <div className={style.text}>
-            <h2>Ready to build your next product with SD?</h2>
-            <p>
-              Start your digital journey today and get a free consultation with
-              our expert team
-            </p>
+            <h2>{t("build.title")}</h2>
+            <p>{t("build.subTitle")}</p>
           </div>
           <Button>
-            Start Your Project
-            <ArrowRight />
+            {isRTL ? <ArrowLeft size={16} /> : <ArrowRight />}
+            {t("common.start")}
           </Button>
         </div>
       </div>

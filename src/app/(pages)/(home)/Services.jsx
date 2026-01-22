@@ -4,8 +4,10 @@ import Image from "next/image";
 import cover from "../../../../public/assets/cover.png";
 import { motion } from "framer-motion";
 import style from "../../../Sass/home/services.module.scss";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const {t} = useTranslation();
   return (
     <div className={style.services}>
         <div className={style.titleWrapper}>
@@ -18,12 +20,12 @@ const Services = () => {
             ease: "linear",
           }}
         >
-          SOFTWARE DEVELOPMENT
+         {t("services.software")}
         </motion.h2>
       </div>
       <div className={style.content}>
-        <h3>Explore Our Services</h3>
-        <p>Comprehensive tech solutions for all your digital needs</p>
+        <h3>{t("services.title")}</h3>
+        <p>{t("services.subtitle")}</p>
       </div>
         <div className={style.coverWrapper}>
     <Image src={cover} alt="cover" className={style.cover} />

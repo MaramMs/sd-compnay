@@ -1,6 +1,8 @@
+'use client'
 import React from "react";
 import style from "../../../Sass/home/process.module.scss";
 import { Search,Palette,CodeXml,Rocket } from 'lucide-react';
+import { useTranslation } from "react-i18next";
 
 const processItems = [
   {
@@ -33,14 +35,17 @@ const processItems = [
   },
 ];
 const Process = () => {
+  const {t} = useTranslation();
   return (
     <div className={style.process}>
       <div className={style.container}>
         <div className={style.content}>
           <div className={style.contentTitle}>
-            <h3>Our Process</h3>
+            <h3>
+              {t("process.title")}
+            </h3>
             <p>
-              A clear, organized methodology to turn your ideas into reality{" "}
+              {t("process.subtitle")}
             </p>
           </div>
           <div className="grid! grid-cols-2! md:grid-cols-4! gap-4! md:gap-6">

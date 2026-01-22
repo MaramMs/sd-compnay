@@ -1,17 +1,15 @@
 @use "../helpers/variables.scss" as *;
 .process {
-  padding-top: 96px;
+  padding: 96px 0px;
   background-color: #faf5ff;
   .container {
     margin: 0 auto;
-    padding: 0 104px;
     max-width: 1232px;
-    padding-top: 112px;
+    padding: 112px 104px;
     box-shadow: 0px 0px 16.7px 0px #00438c1f;
     border-radius: 48px;
     background: linear-gradient(135deg, #faf5ff 0%, #fcfcfc 50%, #eff6ff 100%);
     .content {
-      padding: 75px;
       display: flex;
       flex-direction: column;
       gap: 60px;

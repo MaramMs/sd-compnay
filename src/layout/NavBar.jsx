@@ -1,28 +1,32 @@
+"use client";
 
-'use client';
-
-import React, { useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation"; 
-import Image from "next/image";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Menu, X } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 import style from "@/Sass/navbar.module.scss";
+import { ArrowRight, Menu, X } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import logo from "../../public/assets/LOGO.svg";
 
 const navItems = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about-us" },
-  { label: "Services", href: "/services" },
-  { label: "Projects", href: "/projects" },
-  // { label: "Blogs", href: "/blogs" },
-  // { label: "Consultation", href: "/consultation" },
-  { label: "Contact", href: "/contact" },
+  { labelKey: "nav.home", href: "/" },
+  { labelKey: "nav.about", href: "/about-us" },
+  { labelKey: "nav.services", href: "/services" },
+  { labelKey: "nav.projects", href: "/projects" },
+  // { labelKey: "nav.blogs", href: "/blogs" },
+  // { labelKey: "nav.consultation", href: "/consultation" },
+  { labelKey: "nav.contact", href: "/contact" },
 ];
 
 const NavBar = () => {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { t } = useTranslation();
+  const { mounted, currentLanguage } = useLanguage();
 
   return (
     <nav className={style.navbar}>
@@ -35,8 +39,8 @@ const NavBar = () => {
         {/* Desktop Menu */}
         <div className={style.navLinks}>
           {navItems.map((item) => {
-            const isActive = 
-              pathname === item.href || 
+            const isActive =
+              pathname === item.href ||
               (item.href !== "/" && pathname.startsWith(item.href));
 
             return (
@@ -45,22 +49,25 @@ const NavBar = () => {
                 href={item.href}
                 className={`${style.navLink} ${isActive ? style.active : ""}`}
               >
-                {item.label}
+                {mounted ? t(item.labelKey) : ""}
               </Link>
             );
           })}
         </div>
 
         <div className={style.navButtons}>
-          <Button>AR</Button>
-          <Button>
-            Start Your Project
+          <LanguageSwitcher />
+          <Button className={style.start}>
+            {mounted ? t("common.start") : ""}
             <ArrowRight />
           </Button>
         </div>
 
         {/* Mobile Hamburger */}
-        <div className={style.mobileMenuIcon} onClick={() => setMobileOpen(!mobileOpen)}>
+        <div
+          className={style.mobileMenuIcon}
+          onClick={() => setMobileOpen(!mobileOpen)}
+        >
           {mobileOpen ? <X size={28} /> : <Menu size={28} />}
         </div>
       </div>
@@ -69,8 +76,8 @@ const NavBar = () => {
       {mobileOpen && (
         <div className={style.mobileMenu}>
           {navItems.map((item) => {
-            const isActive = 
-              pathname === item.href || 
+            const isActive =
+              pathname === item.href ||
               (item.href !== "/" && pathname.startsWith(item.href));
 
             return (
@@ -80,14 +87,14 @@ const NavBar = () => {
                 className={`${style.mobileNavLink} ${isActive ? style.active : ""}`}
                 onClick={() => setMobileOpen(false)}
               >
-                {item.label}
+                {mounted ? t(item.labelKey) : ""}
               </Link>
             );
           })}
           <div className={style.mobileButtons}>
-            <Button>AR</Button>
+            <LanguageSwitcher />
             <Button>
-              Start Your Project
+              {mounted ? t("common.learn") : ""}
               <ArrowRight />
             </Button>
           </div>

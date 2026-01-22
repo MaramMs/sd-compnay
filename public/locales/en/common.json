@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+        "button": "start your project"
+
+  },
+  "hero": {
+    "title1": "Your Vision,",
+    "title2": "Our Expertise",
+    "title3": "Let's Build It",
+    "subtitle": "Innovative Digital Solutions for Your Business",
+    "button": "start your project"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "SD is your trusted software development partner. We deliver innovative tech solutions that help businesses grow and scale in the digital age with efficiency and professionalism.",
+    "years": "Years of Experience",
+    "projectsCompleted":"Projects Delivered"
+  },
+  "services": {
+    "software": "SOFTWARE DEVELOPMENT",
+    "title": "Explore Our Services",
+    "subtitle": "Comprehensive tech solutions for all your digital needs",
+    "service": "Service"
+  },
+  "chooseUs":{
+    "title": "Why Choose SD?",
+    "description": "We deliver exceptional value through our expertise and dedication",
+    "quality": "جودة عالية",
+    "expertise": "خبرة واسعة",
+    "support": "دعم مستمر",
+    "innovation": "حلول مبتكرة"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Real results from clients who achieved impressive digital success",
+    "viewProject": "View Project",
+    "allProjects": "All Projects"
+  },
+   "process":{
+    "title": "Our Process",
+    "subtitle": "A clear, organized methodology to turn your ideas into reality",
+    "step1": "Discovery & Planning",
+    "step2": "Design & Prototyping",
+    "step3": "Development & Testing",
+    "step4": "Deployment & Support"
+  },
+  "build":{
+    "title":"Ready to build your next product with SD?",
+    "subTitle":" Start your digital journey today and get a free consultation with our expert team"
+
+  },
+  "blogs": {
+    "title": "Latest Blogs",
+    "subtitle": "Stay updated with our latest insights and articles",
+    "readMore": "Read More",
+    "published": "Published"
+  },
+  "consultation": {
+    "title": "Free Consultation",
+    "subtitle": "Get expert advice on your project",
+    "schedule": "Schedule Now"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to hear from you",
+    "name": "Full Name",
+    "email": "Email Address",
+    "message": "Message",
+    "send": "Send Message",
+    "phone": "Phone",
+    "address": "Address"
+  },
+  "footer": {
+    "company":{
+         "title": " Company",
+            "about": "About Us",
+            "services": "Services",
+            "projects": "Projects",
+            "Consultation":"Consultation"
+    },
+   "services":{
+         "title": " Services",
+            "web": "Web Development",
+            "mobile": "Mobile Apps",
+            "design": "UI/UX Design",
+            "tech":"Tech Consulting"
+    },
+     "resource":{
+         "title": " Resource",
+            "blog": "Blog"
+           
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "start": "start your project"
+  }
+}
