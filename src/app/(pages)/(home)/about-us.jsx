@@ -35,25 +35,6 @@ const AboutUs = () => {
               <Image src={imageCollect}/>
             )
           }
-          {/* <div className={style.aboutPhotos}>
-            <div className={`${style.imgWrap} ${style.first}`}>
-              <Image src={about_1} alt="about img" />
-            </div>
-
-            <div className={style.imgWrap}>
-              <Image src={about_2} alt="about img" />
-            </div>
-
-            <div className={style.imgWrap}>
-              <Image src={about_3} alt="about img" />
-            </div>
-            <div className={`${style.imgWrap} ${style.last}`}>
-              <Image src={about_4} alt="about img" />#{" "}
-              <div className={style.logo}>
-                <Image src={logo} alt="logo" className={style.logoImage} />
-              </div>
-            </div>
-          </div> */}
           <div className={style.experiences}>
             <div className={style.box}>
               <span>8 +</span>

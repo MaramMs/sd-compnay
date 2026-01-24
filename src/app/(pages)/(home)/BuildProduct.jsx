@@ -18,8 +18,20 @@ const BuildProduct = () => {
             <p>{t("build.subTitle")}</p>
           </div>
           <Button>
-            {isRTL ? <ArrowLeft size={16} /> : <ArrowRight />}
-            {t("common.start")}
+          
+            {isRTL ?  (
+              <>
+               <ArrowLeft/>
+               {t("common.start")} 
+               </>
+            ) : 
+            (
+             <>
+               {t("common.start")} 
+               <ArrowRight />
+             </>
+            )
+            }
           </Button>
         </div>
       </div>

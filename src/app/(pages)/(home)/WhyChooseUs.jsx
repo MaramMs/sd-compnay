@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
               {t("chooseUs.description")}
             </p>
           </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-[64px]">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16">
   <div className={style.card}>
     <h3>Dedicated Expert Team</h3>
     <p>

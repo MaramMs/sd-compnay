@@ -9,7 +9,7 @@ const ServiceCard = () => {
       <div className={style.slideContent}>
           <div className={style.serviceTitle}>
             <div className={style.iconBox}>
-              <Server className={style.icon} size={50} />
+              <Server className={style.icon}  />
             </div>
             <span>Service 1</span>
           </div>

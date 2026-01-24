@@ -1,0 +1,36 @@
+// RTL/LTR Mixins for logical properties
+@mixin margin-inline($start, $end: $start) {
+  margin-inline-start: $start;
+  margin-inline-end: $end;
+}
+
+@mixin margin-inline-start($value) {
+  margin-inline-start: $value;
+}
+
+@mixin margin-inline-end($value) {
+  margin-inline-end: $value;
+}
+
+@mixin inset-inline($start, $end: $start) {
+  inset-inline-start: $start;
+  inset-inline-end: $end;
+}
+
+@mixin inset-inline-start($value) {
+  inset-inline-start: $value;
+}
+
+@mixin inset-inline-end($value) {
+  inset-inline-end: $value;
+}
+
+@mixin padding-inline($start, $end: $start) {
+  padding-inline-start: $start;
+  padding-inline-end: $end;
+}
+
+// Gradient direction mixin for RTL
+@mixin gradient-direction($angle) {
+  background: linear-gradient($angle, #251462 0%, #8031cd 100%);
+}

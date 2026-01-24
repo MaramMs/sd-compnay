@@ -3,12 +3,14 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import style from "../Sass/home/customSwiper.module.scss";
-import { ArrowRight, Cloud, Server } from "lucide-react";
+import { ArrowLeft, ArrowRight, Cloud, Server } from "lucide-react";
 import { Button } from "./ui/button";
 import { Mousewheel } from "swiper/modules";
 import { useTranslation } from "react-i18next";
+import { useLanguage } from "@/context/LanguageContext";
 const CustomSwiper = () => {
   const { t } = useTranslation();
+  const { isRTL } = useLanguage();
   return (
     <Swiper
       modules={[Mousewheel]}
@@ -57,8 +59,17 @@ const CustomSwiper = () => {
                 <p>cRobust, secure backend architecture with reliable APIs</p>
 
                 <Button>
-                  Start Your Project
-                  <ArrowRight size={24} />
+                  {isRTL ? (
+                    <>
+                      <ArrowLeft size={24} />
+                      {t("common.start")}
+                    </>
+                  ) : (
+                    <>
+                      {t("common.start")}
+                      <ArrowRight size={24} />
+                    </>
+                  )}
                 </Button>
               </div>
             </div>

@@ -95,7 +95,6 @@
   }
 }
 
-/* ✅ MEDIA QUERY */
 @media (max-width: 768px) {
   .heroSection {
     padding: 108px 0;
@@ -115,6 +114,10 @@
           line-height: 30.6px;
         }
       }
+    }
+    .icon{
+      top: 768px;
+    right: 25px;
     }
   }
 }

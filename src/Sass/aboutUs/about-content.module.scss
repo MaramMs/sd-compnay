@@ -1,11 +1,12 @@
 @use "../helpers/variables.scss" as *;
+@use "../helpers/mixins.scss" as *;
 .aboutContent {
   padding: 96px 0;
   background-color: #faf5ff;
   .container {
-   max-width: 1232px; 
+    max-width: 1232px;
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -75,7 +76,7 @@
             height: 302px;
             background: #d792ff;
             top: -20px;
-            left: -20px;
+            @include inset-inline-start(-20px);
             z-index: -1;
             border-top-left-radius: 136px;
             border-top-right-radius: 24px;
@@ -110,13 +111,13 @@
         position: relative;
         width: 600px;
         height: 4px;
-        margin-left: auto;
+        @include margin-inline-end(auto);
         background: linear-gradient(90deg, #251462 0%, #8031cd 100%);
 
         &::before {
           content: "";
           position: absolute;
-          left: -20px;
+          @include inset-inline-start(-20px);
           top: 50%;
           width: 28px;
           height: 28px;
@@ -126,7 +127,7 @@
       }
       .second {
         position: relative;
-        margin-left: auto;
+        @include margin-inline-end(auto);
         z-index: 1;
         img {
           position: relative;
@@ -140,7 +141,7 @@
           height: 406px;
           background: #d792ff;
           top: -20px;
-          right: -20px;
+          @include inset-inline-end(-20px);
           z-index: -1;
           border-top-left-radius: 24px;
           border-top-right-radius: 136px;
@@ -150,23 +151,19 @@
         }
       }
       .line2 {
-        margin-right: auto;
+        @include margin-inline-start(auto);
         position: relative;
         background: linear-gradient(90deg, #251462 0%, #8031cd 100%);
-
         width: 600px;
         height: 4px;
         &::before {
           content: "";
           position: absolute;
-          left: 0px;
+          @include inset-inline-start(0px);
           top: 50%;
-
           width: 28px;
           height: 28px;
-
           background: linear-gradient(180deg, #251462 17.74%, #8031cd 82.26%);
-
           transform: translateY(-50%) rotate(45deg);
         }
       }
@@ -185,7 +182,7 @@
           height: 406px;
           background: #d792ff;
           top: -20px;
-          left: -20px;
+          @include inset-inline-start(-20px);
           z-index: -1;
           border-top-left-radius: 136px;
           border-top-right-radius: 24px;
@@ -238,17 +235,17 @@
             z-index: 1;
             img {
               position: relative;
-                width: 258px;
-            height: 232px;
+              width: 258px;
+              height: 232px;
             }
             &::after {
               content: "";
               position: absolute;
-               width: 258px;
-            height: 232px;
+              width: 258px;
+              height: 232px;
               background: #d792ff;
               top: -20px;
-              left: -20px;
+              @include inset-inline-start(-20px);
               z-index: -1;
               border-top-left-radius: 78px;
               border-top-right-radius: 14px;
@@ -266,18 +263,17 @@
               font-size: 14px;
             }
           }
-        
         }
         .line1 {
           position: relative;
           width: 600px;
           height: 4px;
-          margin-left: auto;
+          @include margin-inline-end(auto);
           background: linear-gradient(90deg, #251462 0%, #8031cd 100%);
           &::before {
             content: "";
             position: absolute;
-            left: -20px;
+            @include inset-inline-start(-20px);
             top: 50%;
             width: 28px;
             height: 28px;
@@ -285,12 +281,12 @@
             transform: translateY(-50%) rotate(45deg);
           }
         }
-          .innovationContent{
-            order: 2;
-          }
+        .innovationContent {
+          order: 2;
+        }
         .second {
           position: relative;
-          margin-left: auto;
+          @include margin-inline-end(auto);
           z-index: 1;
           order: 1;
           img {
@@ -301,11 +297,11 @@
           &::after {
             content: "";
             position: absolute;
-          width: 258px;
+            width: 258px;
             height: 232px;
             background: #d792ff;
             top: -20px;
-            right: -20px;
+            @include inset-inline-end(-20px);
             z-index: -1;
             border-top-left-radius: 14px;
             border-top-right-radius: 48px;
@@ -315,23 +311,19 @@
           }
         }
         .line2 {
-          margin-right: auto;
+          @include margin-inline-start(auto);
           position: relative;
           background: linear-gradient(90deg, #251462 0%, #8031cd 100%);
-
           width: 600px;
           height: 4px;
           &::before {
             content: "";
             position: absolute;
-            left: 0px;
+            @include inset-inline-start(0px);
             top: 50%;
-
             width: 28px;
             height: 28px;
-
             background: linear-gradient(180deg, #251462 17.74%, #8031cd 82.26%);
-
             transform: translateY(-50%) rotate(45deg);
           }
         }
@@ -340,7 +332,7 @@
           z-index: 1;
           img {
             position: relative;
-             width: 258px;
+            width: 258px;
             height: 232px;
           }
           &::after {
@@ -350,7 +342,7 @@
             height: 232px;
             background: #d792ff;
             top: -20px;
-            left: -20px;
+            @include inset-inline-start(-20px);
             z-index: -1;
             border-top-left-radius: 48px;
             border-top-right-radius: 14px;

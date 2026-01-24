@@ -99,7 +99,8 @@
   .whyChooseUs {
     padding: 64px 16px;
     .content {
-      padding: 64px 32px;
+      padding: 40px 32px;
+      gap:32px;
       .contentTitle {
         justify-content: center;
         align-items: center;
@@ -119,6 +120,7 @@
         text-align: center;
         overflow: hidden;
         padding: 16px;
+        height: 119px;
         &::after {
           content: "";
           top: 58%;
