@@ -8,12 +8,14 @@ import {
 import style from "../../../../Sass/services/customAccordion.module.scss";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function CustomAccordion() {
+  const { t } = useTranslation();
   return (
     <div className={style.accordion}>
       <div className={style.container}>
-        <h2>Real-World Use Cases</h2>
+        <h2>{t('services.accordionTitle')}</h2>
         <Accordion
           type="single"
           collapsible
@@ -106,9 +108,9 @@ export function CustomAccordion() {
         </Accordion>
 
         <div className={style.button}>
-          <p>Need a custom backend solution for your specific use case?</p>
+          <p>{t('services.desAccordion1')}</p>
           <Button>
-            Discuss Your Requirements
+            {t('services.accordionButton')}
             <ArrowRight />
           </Button>
         </div>

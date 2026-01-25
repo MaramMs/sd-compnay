@@ -13,17 +13,21 @@ const images = [image2, image3, image4];
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useTranslation } from "react-i18next";
 
 const ProjectReview = () => {
   const paginationRef = useRef(null);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+  const {t} = useTranslation()
   return (
     <div className={style.projectReview}>
       <div className={style.container}>
         <div className={style.reviewContent}>
           <div className={style.title}>
-            <h2>Project Review</h2>
+            <h2>
+              {t('projects.projectOverview')}
+            </h2>
             <p>Seamless luxury shopping on any device.</p>
           </div>
 

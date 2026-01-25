@@ -33,10 +33,20 @@
     "trust_desc": "Every project phase is visible through client dashboards with live progress updates, analytics, and milestone trackers. We share raw data, timelines, and performance metrics upfront, eliminating surprises and fostering informed decisions—just like open-source code reviews in our development workflows."
   },
   "services": {
+    "heroTitle": "SD Services",
     "software": "SOFTWARE DEVELOPMENT",
     "title": "Explore Our Services",
     "subtitle": "Comprehensive tech solutions for all your digital needs",
-    "service": "Service"
+    "service": "Service",
+    "mainTitle": "Our Expertise",
+    "description1": "At Software Development, we deliver cutting-edge services in custom software, UI/UX design, and fintech solutions tailored for Middle East businesses.",
+    "description2": "From responsive web apps to AI-powered dashboards, we've equipped 500+ clients with scalable platforms that drive growth and efficiency.",
+    "heroDetailsTitle": "Backend & APIs",
+    "mainTitleDetails": "What We Offer",
+    "tools": "Tools and Technologies Used",
+    "accordionTitle": "Real-World Use Cases",
+    "desAccordion1": "Need a custom backend solution for your specific use case?",
+    "accordionButton": "Discuss Your Requirements"
   },
   "chooseUs": {
     "title": "Why Choose SD?",
@@ -47,10 +57,20 @@
     "innovation": "حلول مبتكرة"
   },
   "projects": {
-    "title": "Featured Projects",
-    "subtitle": "Real results from clients who achieved impressive digital success",
-    "viewProject": "View Project",
-    "allProjects": "All Projects"
+    "heroTitle":"SD Projects",
+    "title": "Our Projects",
+    "subtitle": "At Software Development, we launched in 2020 to deliver transformative projects that power businesses across the Middle East.",
+    "allProjects": "All Projects",
+    "projectOverview":"Project Overview",
+    "challengeAndSolution":"Challenges & Solutions",
+    "challengeAndSolutionDes":"A comparative analysis of critical UX obstacles and their strategic resolutions through data-driven design interventions.",
+    "challenge":"Challenges",
+    "solution":"Solutions",
+    "techUsed":"Technologies Used",
+    "techUsedDes":"Enterprise-grade technologies chosen for reliability, performance, and scalability at global commerce levels.",
+    "rateTitle":"The Numbers Don't Lie",
+    "rateDes":"Real results. Real revenue impact. Real ROI delivered in record time."
+   
   },
   "process": {
     "title": "Our Process",
@@ -111,6 +131,8 @@
     "success": "Success",
     "cancel": "Cancel",
     "submit": "Submit",
-    "start": "start your project"
+    "start": "start your project",
+    "viewProject": "View Project",
+    "convertRate": "  Conversion Rate"
   }
 }

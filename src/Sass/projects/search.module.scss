@@ -74,12 +74,12 @@
 
 @media (max-width: 768px) {
     .filterBtn {
-    display: none;
+    display: none !important;
     }
     .icon {
         width: 24px;
         height: 24px;
-        margin-right: 16px;
+        margin-left: 16px;
     }
 }
     .searchWrapper {

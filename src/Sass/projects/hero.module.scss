@@ -32,6 +32,10 @@
     cursor: pointer;
   }
 
+   .container {
+    max-width: 1232px; 
+    width: 100%;
+    margin: 0 auto;
   .heroContent {
     font-family: "montserrat", sans-serif;
     position: relative;
@@ -40,9 +44,8 @@
     flex-direction: column;
     gap: 32px;
     align-items: left;
-    text-align: center;
+    top:137px;
     position: absolute;
-    left: 104px;
 
 
 .categories {
@@ -91,14 +94,14 @@
         color: #FCFCFC;
         font-size: 48px;
         font-weight: 700;
-        text-align: left;
+        text-align: start;
       }
       p{
         color: #FCFCFCD9;
         line-height: 28px;
         font-size: 20px;
         font-weight: 400;
-        text-align: left;
+        text-align: start;
         width: 50%;
       }
     }
@@ -106,7 +109,8 @@
     button {
       display: flex;
       gap: 10px;
-      align-items: center;
+      // align-items: center;
+      justify-content: start;
       background-color: $primary_color;
 box-shadow: 0px 4px 12px 0px #A713FF33;
       height: 48px;
@@ -118,8 +122,11 @@ box-shadow: 0px 4px 12px 0px #A713FF33;
       font-weight: 600;
       cursor: pointer;
       max-width: max-content;
+      margin: 0px !important;
     }
   }
+}
+
 }
 
 
@@ -128,21 +135,23 @@ box-shadow: 0px 4px 12px 0px #A713FF33;
 
 @media (max-width: 768px) {
   .heroSection {
-    height: 520px;
+    // height: 520px;
     .heroContent {
       left: 16px;
-      top: 152px;
+      top: 145px;
       right: 16px;
-      gap: 71px;
+      gap: 40px;
       .title {
         gap: 16px;
         h2 {
           font-size: 36px;
+          font-weight: 300;
         }
         p {
-          font-size: 16px;
+          font-size: 14px;
           width: 100%;
-          line-height: 30px;
+          line-height: 25px;
+          font-weight: 300;
         }
       }
     }

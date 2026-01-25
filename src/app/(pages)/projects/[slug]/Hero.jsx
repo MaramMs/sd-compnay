@@ -19,7 +19,8 @@ const Hero = () => {
       <div className={style.icon}>
         <FaWhatsapp color="white" size={38} />
       </div>
-      <div className={style.heroContent}>
+     <div className={style.container}>
+       <div className={style.heroContent}>
         <div className={style.categories}>
         <div className={style.category}>E-Commerce / Retail</div>
         <div className={style.year}>2026</div>
@@ -36,6 +37,9 @@ const Hero = () => {
         <ArrowRight />
         </Button>
       </div>
+
+     </div>
+
     </div>
   );
 };

@@ -1,8 +1,11 @@
+'use client'
 import React from "react";
 import style from "../../../../Sass/projects/rate.module.scss";
 import Image from "next/image";
 import num from "../../../../../public/num.svg";
+import { useTranslation } from "react-i18next";
 const Rate = () => {
+  const {t} = useTranslation()
   return (
     <div className={style.rate}>
       <div className={style.container}>
@@ -10,12 +13,11 @@ const Rate = () => {
           <div className={style.title}>
             <div className={style.titleImage}>
               <Image src={num} />
-              <h3>The Numbers Don't Lie</h3>
+              <h3>{t('projects.rateTitle')}</h3>
             </div>
 
             <p>
-              Real results. Real revenue impact. Real ROI delivered in record
-              time.
+            {t('projects.rateDes')}
             </p>
           </div>
           <div className={style.toolsItem}>

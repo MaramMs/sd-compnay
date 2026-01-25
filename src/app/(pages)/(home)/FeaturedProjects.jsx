@@ -128,7 +128,7 @@ const FeaturedProjects = () => {
                       <ArrowLeft size={24} className="text-[#FCFCFC]!" />
                     ) : (
                       <ArrowRight size={24} className="text-[#FCFCFC]!" />
-                    )}{" "}
+                    )}
                   </div>
                 </div>
               </div>

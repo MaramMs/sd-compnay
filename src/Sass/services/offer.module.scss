@@ -65,7 +65,7 @@
         }
         p {
           padding: 0px 24px;
-          text-align: left;
+          text-align: start;
           color: #251462;
           font-weight: 500;
           font-size: 16px;
@@ -104,27 +104,25 @@
           flex-direction: column;
 
           h4 {
-            font-family: "montserrat", sans-serif;
             color: #faf5ff;
             background-color: transparent;
             font-size: 24px;
             font-weight: 600;
-            text-align: left;
+            text-align: start;
           }
           p {
-            font-family: "montserrat", sans-serif;
 
             color: #fcfcfc;
             font-size: 16px;
             font-weight: 500;
-            text-align: left;
+            text-align: start;
             line-height: 40px;
           }
           .line {
             position: relative;
             width: 100%;
             height: 1px;
-            margin-left: auto;
+             margin-inline-start: auto;
             background: #faf5ff;
 
             &::after {

@@ -15,22 +15,6 @@
       font-size: 36px;
       font-weight: 700;
       font-family: "montserrat", sans-serif;
-      //Close
-      // border: 1.6px solid #E5E7EB;
-      //     border-radius: 14px;
-      //     padding: 1.6px;
-      //     height: 94px;
-      //     padding: 20px 24px;
-      //open
-      // border: 1.6px solid #D792FF;
-      //     border-top-left-radius: 14px;
-      //     border-top-right-radius: 14px;
-      //     padding: 20px 24px;
-      // open h3 button
-      // color:#8031CD;
-      //     color: #8031CD;
-      //     font-weight: 700 !important;
-      //     font-size: 20px;
     }
     .customAccordion {
       display: flex;
@@ -45,7 +29,6 @@
         }
         &[data-state="closed"] {
           border: 1.6px solid #e5e7eb;
-          padding: 20px 24px;
           border-radius: 14px;
         }
         .title {
@@ -53,10 +36,19 @@
           font-weight: 700;
           font-size: 20px;
           cursor: pointer;
+          text-align: start;
+            flex-direction: row !important;
+                padding: 20px 24px;
+                
+              
+
+              
+
           .item {
             display: flex;
             flex-direction: column;
             gap: 4px;
+             align-items: flex-start; 
           }
           h4 {
             font-weight: 700;
@@ -73,14 +65,15 @@
             transition: all 0.3s ease;
           }
           &[data-state="open"] {
-            .title {
-              padding: 20px 24px;
-            }
             h4 {
               color: #8031cd;
               font-weight: 700;
               font-size: 20px;
-              padding: 20px 24px;
+            }
+
+            svg{
+              color: #8031cd;
+              font-size: 24px;
             }
 
             span {
@@ -118,10 +111,12 @@
               font-size: 14px;
               font-family: "montserrat", sans-serif;
               text-transform: uppercase;
+                            padding-inline-start: 15px; // Added for RTL support
+
               &:before {
                 content: "";
                 position: absolute;
-                left: -11px;
+                  inset-inline-start: 0;
                 top: 7px;
                 width: 6px;
                 height: 6px;
@@ -136,10 +131,11 @@
               font-size: 14px;
               font-family: "montserrat", sans-serif;
               text-transform: uppercase;
+               padding-inline-start: 15px;
               &:before {
                 content: "";
                 position: absolute;
-                left: -11px;
+                  inset-inline-start: 0;
                 top: 7px;
                 width: 6px;
                 height: 6px;
@@ -153,6 +149,7 @@
               font-family: "montserrat", sans-serif;
               font-size: 14px;
               line-height: 26px;
+              text-align: start;
             }
           }
           span {
@@ -179,6 +176,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
+          text-align: start;
       }
       button {
         height: 48px;
@@ -192,6 +190,22 @@
         font-family: "montserrat", sans-serif;
         svg {
           cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
+[dir="rtl"] {
+  .accordion {
+    .container {
+      .button {
+        button {
+          flex-direction: row !important;
+          svg {
+            transform: rotate(180deg); 
+          }
         }
       }
     }
@@ -215,7 +229,6 @@
           border-top-right-radius: 14px;
           h3 {
             &[data-state="open"] {
-              padding: 16px 24px;
               button {
                 svg {
                   width: 24px;
@@ -225,9 +238,7 @@
               }
             }
 
-            &[data-state="closed"] {
-              padding: 16px 24px;
-            }
+          
           }
 
           &[data-state="closed"] {
@@ -242,9 +253,6 @@
               font-size: 14px;
             }
             &[data-state="open"] {
-              // .title {
-              //   padding: 16px 24px;
-              // }
               h4 {
                 font-size: 14px;
                 padding: 0px;
@@ -279,8 +287,6 @@
               display: flex;
               flex-direction: column;
               gap: 8px;
-              h3 {
-              }
               h4 {
                 position: relative;
                 color: #8031cd;
@@ -288,10 +294,11 @@
                 font-size: 14px;
                 font-family: "montserrat", sans-serif;
                 text-transform: uppercase;
+                padding-inline-start: 15px; // Added for RTL support
                 &:before {
                   content: "";
                   position: absolute;
-                  left: -11px;
+                  inset-inline-start: 0; // Changed from left: -11px
                   top: 7px;
                   width: 6px;
                   height: 6px;
@@ -303,7 +310,7 @@
               &:before {
                 content: "";
                 position: absolute;
-                left: -10px;
+                inset-inline-start: 0; // Changed from left: -10px
                 top: 7px;
                 width: 6px;
                 height: 6px;

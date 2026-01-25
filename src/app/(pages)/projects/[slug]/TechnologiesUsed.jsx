@@ -1,15 +1,17 @@
+'use client';
 import React from "react";
 import style from "../../../../Sass/projects/technologies-used.module.scss";
+import { useTranslation } from "react-i18next";
 
 const TechnologiesUsed = () => {
+  const {t} = useTranslation()
   return (
     <div className={style.technologiesUsed}>
       <div className={style.container}>
         <div className={style.title}>
-          <h2>Technologies Used</h2>
+          <h2>{t('projects.techUsed')}</h2>
           <p>
-            Enterprise-grade technologies chosen for reliability, performance,
-            and scalability at global commerce levels.
+    {t('projects.techUsedDes')}
           </p>
         </div>
 
