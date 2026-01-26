@@ -16,11 +16,10 @@ const Hero = () => {
         className={style.imgHero}
         priority
       />
-      <div className={style.icon}>
-        <FaWhatsapp color="white" size={38} />
-      </div>
+  
       <div className={style.heroContent}>
-      <div className={style.title}>
+       <div className={style.container}>
+         <div className={style.title}>
         <h2>Expert Software Consultations</h2>
       <p>
         Get tailored advice from 10+ years of fintech and UI/UX experts. Identify your tech challenges and book a free session today.
@@ -30,6 +29,13 @@ const Hero = () => {
         Book Now 
         <ArrowRight />
         </Button>
+
+       </div>
+      </div>
+
+
+          <div className={style.icon}>
+        <FaWhatsapp color="white" size={38} />
       </div>
     </div>
   );

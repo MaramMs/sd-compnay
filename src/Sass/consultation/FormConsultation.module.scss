@@ -23,6 +23,7 @@
         color: #303a49;
         font-weight: 500;
         font-size: 16px;
+        align-items: start;
       }
       .inputWrapper {
         padding: 2px;
@@ -56,6 +57,7 @@
         background: #fff;
         padding: 12px 14px;
         height: 48px;
+      align-items: start;
 
         &:focus {
           outline: none;

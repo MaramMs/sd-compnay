@@ -91,19 +91,34 @@
     "published": "Published"
   },
   "consultation": {
-    "title": "Free Consultation",
-    "subtitle": "Get expert advice on your project",
-    "schedule": "Schedule Now"
+    "heroTitle": "Free Consultation",
+    "heroDes": "Get expert advice on your project",
+    "schedule": "Schedule Now",
+    "title":"Consultation Scope",
+    "subTitle":"30-60 minute sessions, online or onsite",
+    "expertiseTitle":"Value of Expertise",
+    "expertiseDes":"Save time and costs with fast solutions. Our experience turns ideas into digital success.",
+    "formConsultation":"Book a Consultation",
+    "fullName": "fullName",
+    "email": "Email Address",
+    "message": "Message",
+    "send": "Book Consultation",
+    "companyName": "Company Name",
+   "projectType": "Preferred Date ",
+    "date":"Preferred Date ",
+    "des":"* All fields are required. We respect your privacy and will never share your information."
   },
   "contact": {
     "title": "Contact Us",
     "subtitle": "We'd love to hear from you",
-    "name": "Full Name",
+    "firstName": "First Name",
+    "lastName":"Last Name",
     "email": "Email Address",
     "message": "Message",
     "send": "Send Message",
     "phone": "Phone",
-    "address": "Address"
+    "address": "Address",
+    "hearAboutUs":"How did yoy hear About us ?"
   },
   "footer": {
     "company": {

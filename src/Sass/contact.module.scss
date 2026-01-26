@@ -2,7 +2,7 @@
   background-color: #faf5ff;
   padding: 96px;
   .container {
-   max-width: 1232px; 
+    max-width: 1232px; 
     width: 100%;
     margin: 0 auto; 
     border: 1px solid #8031cd;
@@ -11,6 +11,15 @@
       display: flex;
       flex-direction: column;
       gap: 24px;
+      
+      &[dir="rtl"],
+      [dir="rtl"] & {
+        flex-direction: column !important; 
+      }
+            img {
+        align-self: flex-start;
+      }
+      
       h2 {
         background: linear-gradient(270deg, #8031cd 2.11%, #d328ec 73.53%);
         -webkit-background-clip: text;
@@ -18,17 +27,23 @@
         font-weight: 700;
         line-height: 52px;
         font-size: 36px;
+        text-align: start;
       }
+      
       .label {
         color: #303a49;
         font-weight: 500;
         font-size: 16px;
+        text-align: start;
+        align-items: start;
       }
+      
       .inputWrapper {
-        padding: 2px; // سماكة البوردر
+        padding: 2px;
         border-radius: 12px;
         background: linear-gradient(180deg, #251462 17.74%, #8031cd 82.26%);
       }
+      
       .text,
       .textarea {
         width: 100%;
@@ -38,6 +53,12 @@
         padding: 12px 14px;
         outline: none;
         height: 48px;
+        text-align: start;
+        direction: inherit;
+
+        &::placeholder {
+          text-align: start;
+        }
 
         &:focus {
           outline: none;
@@ -47,7 +68,9 @@
 
       .textarea {
         height: 157px;
+        resize: vertical;
       }
+      
       button {
         width: 100%;
         background-color: #d328ec;
@@ -63,6 +86,23 @@
   }
 }
 
+[dir="rtl"] {
+  .contactForm {
+    .container {
+      .form {
+        fieldset {
+          &.flex {
+            flex-direction: column !important;
+          }
+        }
+        
+        img {
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+}
 
 @media (max-width: 768px) {
   .contactForm {
@@ -74,6 +114,10 @@
         h2 {
           font-size: 28px;
           line-height: 40px;
+        }
+        
+        img {
+          align-self: center;
         }
       }
     }

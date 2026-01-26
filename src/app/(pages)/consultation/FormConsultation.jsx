@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import style from "../../../Sass/consultation/FormConsultation.module.scss";
 import {
@@ -27,19 +28,21 @@ import {
 import { ArrowUpRight } from "lucide-react";
 import DatePicker from "./DatePickerInput";
 import DatePickerInput from "./DatePickerInput";
+import { useTranslation } from "react-i18next";
 const FormConsultation = () => {
+  const {t} = useTranslation()
   return (
     <div className={style.contactForm}>
       <div className={style.container}>
         <div className={style.form}>
           <Image src={logo} />
-          <h2>Book a Consultation</h2>
+          <h2>{t('consultation.formConsultation')}</h2>
           <FieldSet>
             <FieldGroup>
               <div className="grid md:grid-cols-2 gap-4">
                 <Field className="gap-4">
                   <FieldLabel htmlFor="city" className={style.label}>
-                    Full Name *
+                  {t('consultation.fullName')}
                   </FieldLabel>
                   <div className={style.inputWrapper}>
                     <Input
@@ -52,7 +55,7 @@ const FormConsultation = () => {
                 </Field>
                 <Field className="gap-4">
                   <FieldLabel htmlFor="zip" className={style.label}>
-                    Email Address *
+                    {t('consultation.email')} *
                   </FieldLabel>
                   <div className={style.inputWrapper}>
                     <Input
@@ -69,7 +72,7 @@ const FormConsultation = () => {
             <FieldGroup>
               <Field className="gap-4">
                 <FieldLabel htmlFor="city" className={style.label}>
-                  Company Name *
+                  {t('consultation.companyName')} *
                 </FieldLabel>
                 <div className={style.inputWrapper}>
                   <Input
@@ -86,7 +89,7 @@ const FormConsultation = () => {
             <FieldGroup>
               <Field className="gap-4">
                 <FieldLabel htmlFor="city" className={style.label}>
-                  Project Type *
+                  {t('consultation.projectType')} *
                 </FieldLabel>
                 <div className={style.inputWrapper}>
                   <Select>
@@ -109,7 +112,7 @@ const FormConsultation = () => {
             <FieldGroup>
   <Field className="gap-4">
     <FieldLabel className={style.label}>
-      Preferred Date *
+     {t('consultation.date')} *
     </FieldLabel>
 
     <DatePickerInput />
@@ -122,14 +125,17 @@ const FormConsultation = () => {
 
           <Field>
             <Button type="submit">
-              Book Consultation
+             {t('consultation.send')}
               <ArrowUpRight color="#FCFCFC" size={24}/>
 
             </Button>
           </Field>
 
         </div>
-          <p>* All fields are required. We respect your privacy and will never share your information.</p>
+          <p>
+
+            {t('consultation.des')}
+          </p>
       </div>
     </div>
   );

@@ -187,7 +187,7 @@ html[dir="ltr"] body {
 
 /* Flexbox adjustments for RTL */
 html[dir="rtl"] .flex {
-  flex-direction: row-reverse;
+  flex-direction:column;
 }
 
 html[dir="rtl"] .gap-2 {

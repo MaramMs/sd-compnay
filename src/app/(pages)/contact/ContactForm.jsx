@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import style from "../../../Sass/contact.module.scss";
 import {
@@ -17,19 +18,21 @@ import logo from "../../../../public/assets/LOGO.svg";
 import Image from "next/image";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 const ContactForm = () => {
+  const { t } = useTranslation();
   return (
     <div className={style.contactForm}>
       <div className={style.container}>
         <div className={style.form}>
           <Image src={logo} />
-          <h2>Contact Us</h2>
-          <FieldSet className='border-0'>
+          <h2>{t("contact.title")}</h2>
+          <FieldSet className="border-0">
             <FieldGroup>
               <div className="grid md:grid-cols-2 gap-4">
                 <Field className="gap-4">
                   <FieldLabel htmlFor="city" className={style.label}>
-                    First Name *
+                    {t("contact.firstName")}
                   </FieldLabel>
                   <div className={style.inputWrapper}>
                     <Input
@@ -43,7 +46,7 @@ const ContactForm = () => {
                 </Field>
                 <Field className="gap-4">
                   <FieldLabel htmlFor="zip" className={style.label}>
-                    Postal Code
+                    {t("contact.lastName")}
                   </FieldLabel>
                   <div className={style.inputWrapper}>
                     <Input
@@ -60,7 +63,7 @@ const ContactForm = () => {
               <div className="grid md:grid-cols-2 gap-4">
                 <Field className="gap-4">
                   <FieldLabel htmlFor="city" className={style.label}>
-                    First Name *
+                    {t("contact.email")}
                   </FieldLabel>
                   <div className={style.inputWrapper}>
                     <Input
@@ -74,7 +77,7 @@ const ContactForm = () => {
                 </Field>
                 <Field className="gap-4">
                   <FieldLabel htmlFor="zip" className={style.label}>
-                    Postal Code
+                    {t("contact.phone")}
                   </FieldLabel>
                   <div className={style.inputWrapper}>
                     <Input
@@ -91,7 +94,7 @@ const ContactForm = () => {
             <FieldGroup>
               <Field className="gap-4">
                 <FieldLabel htmlFor="city" className={style.label}>
-                  First Name *
+                  {t('contact.hearAboutUs')}
                 </FieldLabel>
                 <div className={style.inputWrapper}>
                   <Input
@@ -108,7 +111,7 @@ const ContactForm = () => {
             <FieldGroup>
               <Field className="gap-4">
                 <FieldLabel htmlFor="city" className={style.label}>
-                  First Name *
+                  {t("contact.message")}
                 </FieldLabel>
                 <div className={style.inputWrapper}>
                   <Textarea
@@ -124,7 +127,9 @@ const ContactForm = () => {
           </FieldSet>
 
           <Field>
-            <Button type="submit">Submit</Button>
+            <Button type="submit">
+              {t('common.submit')}
+            </Button>
           </Field>
         </div>
       </div>

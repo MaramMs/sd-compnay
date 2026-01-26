@@ -1,14 +1,18 @@
+'use client'
 import React from "react";
 import style from "../../../Sass/consultation/scope.module.scss";
 import { Settings } from "lucide-react";
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 const Scope = () => {
+  const {t} = useTranslation()
   return (
     <div className={style.scope}>
       <div className={style.container}>
         <div className={style.title}>
-          <h2>Consultation Scope</h2>
-          <p>30-60 minute sessions, online or onsite</p>
+          <h2>{t('consultation.title')}</h2>
+          <p>{t('consultation.subTitle')}</p>
         </div>
 
         <div className={style.cards}>

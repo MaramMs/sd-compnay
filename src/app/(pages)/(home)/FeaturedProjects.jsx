@@ -51,12 +51,13 @@ const FeaturedProjects = () => {
                 </div>
 
                 <div className={style.viewProject}>
-                  <span>{t("projects.viewProject")}</span>
-  {isRTL ? (
-                      <ArrowLeft size={24} className="text-[#FCFCFC]!" />
-                    ) : (
-                      <ArrowRight size={24} className="text-[#FCFCFC]!" />
-                    )}                </div>
+                  <span>{t("common.viewProject")}</span>
+                  {isRTL ? (
+                    <ArrowLeft size={24} className="text-[#FCFCFC]!" />
+                  ) : (
+                    <ArrowRight size={24} className="text-[#FCFCFC]!" />
+                  )}{" "}
+                </div>
               </div>
             </div>
             <div className={style.gridTwo}>
@@ -86,7 +87,7 @@ const FeaturedProjects = () => {
                   </div>
 
                   <div className={style.viewProject}>
-                    <span> {t("projects.viewProject")}</span>
+                    <span> {t("common.viewProject")}</span>
                     {isRTL ? (
                       <ArrowLeft size={24} className="text-[#FCFCFC]!" />
                     ) : (
@@ -123,7 +124,7 @@ const FeaturedProjects = () => {
                   </div>
 
                   <div className={style.viewProject}>
-                    <span> {t("projects.viewProject")}</span>
+                    <span> {t("common.viewProject")}</span>
                     {isRTL ? (
                       <ArrowLeft size={24} className="text-[#FCFCFC]!" />
                     ) : (

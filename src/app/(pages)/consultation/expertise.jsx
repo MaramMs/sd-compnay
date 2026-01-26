@@ -1,16 +1,18 @@
+'use client'
 import React from "react";
 import style from "../../../Sass/consultation/expertise.module.scss";
 import CustomSwiper from "./CustomSwiper";
+import { useTranslation } from "react-i18next";
 
 const Expertise = () => {
+  const {t} = useTranslation()
   return (
     <div className={style.expertise}>
       <div className={style.container}>
         <div className={style.title}>
-          <h2>Value of Expertise</h2>
+          <h2>{t('consultation.expertiseTitle')}</h2>
           <p>
-            Save time and costs with fast solutions. Our experience turns ideas
-            into digital success.
+          {t('consultation.expertiseDes')}
           </p>
         </div>
         <div className={style.cards}>
