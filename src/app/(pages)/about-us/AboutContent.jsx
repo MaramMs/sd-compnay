@@ -37,21 +37,21 @@ const AboutContent = () => {
               <Image src={trans} />
               <h2>{t("about.transparency")}</h2>
               <p>{t("about.transparency_desc")}</p>
+              <div className={style.line1}></div>
             </div>
           </div>
-          <div className={style.line1}></div>
 
           <div className={style.innovation}>
             <div className={style.innovationContent}>
               <Image src={innovation} />
               <h2>{t("about.innovation")}</h2>
               <p>{t("about.innovation_desc")}</p>
+              <div className={style.line2}></div>
             </div>
             <div className={style.second}>
               <Image src={about_5} alt="about img" />
             </div>
           </div>
-          <div className={style.line2}></div>
 
           <div className={style.transparency}>
             <div className={style.three}>

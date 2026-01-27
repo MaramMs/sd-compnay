@@ -1,73 +1,56 @@
-@use '../Sass/helpers/variables.scss' as *;
-.navbar{
-    background-color: #303A49;
+@use "../Sass/helpers/variables.scss" as *;
+.navbar {
+  background-color: #303a49;
+}
+.container {
+  max-width: 1232px;
+  width: 100%;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-// .container{
-//     max-width: 1200px;
-//     margin: 0  104px;
-//     height: 80px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-// }
+.navLinks {
+  display: flex;
+  gap: 32px;
+  .navLink {
+    color: $white_50;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3s ease;
 
-.container{
-    max-width: 1232px; // 1440 - (104 * 2) = 1232px
-    width: 100%;
-    margin: 0 auto; // هيك بيصير في الوسط
-    // padding: 0 104px; // الـ padding بدل الـ margin
-    height: 80px;
+    &:hover {
+      color: $primary_color;
+    }
+    &.active {
+      color: $primary_color;
+      font-weight: 600;
+    }
+  }
+}
+
+.navButtons , .mobileButtons {
+  display: flex;
+  gap: 16px;
+  .start {
     display: flex;
+    gap: 10px;
     align-items: center;
-    justify-content: space-between;
+    background-color: $primary_color;
+    box-shadow: 0px 4px 12px 0px #a713ff33;
+    height: 48px;
+    padding: 8px 24px;
+    border-radius: 12px;
+    border: none;
+    color: $white_50;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
 }
-
-.navLinks{
-    display: flex;
-    gap: 32px;
-    .navLink{
-        color: $white_50;
-        font-size: 16px;
-        font-weight: 400;
-        text-decoration: none;
-        transition: color 0.3s ease;
-
-        &:hover{
-            color:$primary_color;
-        }
-        &.active{
-            color: $primary_color;
-            font-weight: 600;
-        }
-    }
-}
-
-.navButtons{
-    display: flex;
-    gap: 16px;
-    .start{
-            display: flex;
-        gap: 10px;
-        align-items: center;
-        background-color: $primary_color;
-        box-shadow: 0px 4px 12px 0px #A713FF33;
-        height: 48px;
-        padding: 8px 24px;
-        border-radius: 12px;
-        border:none;
-        color:$white_50;
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-
-     
-
-        
-    }
-  
-}
-
 
 .mobileMenuIcon {
   display: none;
@@ -78,7 +61,7 @@
 .mobileMenu {
   display: none;
   flex-direction: column;
-  background-color: #303A49;
+  background-color: #303a49;
   position: absolute;
   top: 80px;
   left: 0;
@@ -108,7 +91,8 @@
 }
 
 @media (max-width: 1024px) {
-  .navLinks, .navButtons {
+  .navLinks,
+  .navButtons {
     display: none;
   }
 
@@ -121,7 +105,10 @@
   }
 }
 @media (max-width: 768px) {
-  .navbar{
+  .navbar {
     padding: 0px 16px;
+  }
+  .mobileButtons{
+
   }
 }

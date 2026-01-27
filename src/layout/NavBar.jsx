@@ -93,8 +93,8 @@ const NavBar = () => {
           })}
           <div className={style.mobileButtons}>
             <LanguageSwitcher />
-            <Button>
-              {mounted ? t("common.learn") : ""}
+            <Button className={style.start}>
+              {mounted ? t("common.start") : ""}
               <ArrowRight />
             </Button>
           </div>

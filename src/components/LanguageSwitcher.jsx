@@ -22,7 +22,7 @@ export default function LanguageSwitcher() {
       ) : (
         <button
           onClick={() => changeLanguage("ar")}
-                  className='border border-[#D328EC] px-4! py-2! bg-transparent rounded-md text-[#FCFCFC] hover:bg-[#D328EC] hover:text-white transition-all'
+                  className='ml-auto! border border-[#D328EC] px-4! py-2! bg-transparent rounded-md text-[#FCFCFC] hover:bg-[#D328EC] hover:text-white transition-all'
 
         >
           ar
