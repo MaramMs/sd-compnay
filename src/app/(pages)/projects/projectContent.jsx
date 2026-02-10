@@ -1,15 +1,12 @@
 "use client";
-import React from "react";
-import style from "../../../Sass/projects/project-content.module.scss";
-import Search from "./Search";
 import Image from "next/image";
-import feat1 from "../../../../public/assets/feat1.jpg";
-
-import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import { Button } from "@/components/ui/button";
+import Search from "./Search";
+import feat1 from "../../../../public/assets/feat1.jpg";
+import style from "../../../Sass/projects/project-content.module.scss";
 
 const ProjectContent = () => {
   const { t } = useTranslation();
@@ -30,6 +27,7 @@ const ProjectContent = () => {
               <div className={style.card}>
                 <div className={style.image}>
                   <Image
+                  alt=""
                     src={feat1}
                    
                     className="rounded-2xl h-49.25 object-cover "

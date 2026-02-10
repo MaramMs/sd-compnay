@@ -5,10 +5,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import style from "../../../../Sass/services/customAccordion.module.scss";
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Button } from "@/components/ui/button";
+import style from "../../../../Sass/services/customAccordion.module.scss";
 
 export function CustomAccordion() {
   const { t } = useTranslation();

@@ -1,14 +1,9 @@
-'use client'
+"use client";
 import Image from "next/image";
-import {
-  Field,
-  FieldGroup,
-  FieldLabel,
-  FieldSet,
-} from "@/components/ui/field";
+import { useTranslation } from "react-i18next";
+import { Field, FieldGroup, FieldLabel, FieldSet } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import logo from "../../../../public/assets/LOGO.svg";
 import {
   Select,
   SelectContent,
@@ -18,22 +13,22 @@ import {
 } from "@/components/ui/select";
 import { ArrowUpRight } from "lucide-react";
 import DatePickerInput from "./DatePickerInput";
-import { useTranslation } from "react-i18next";
+import logo from "../../../../public/assets/LOGO.svg";
 import style from "../../../Sass/consultation/FormConsultation.module.scss";
 const FormConsultation = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
     <div className={style.contactForm}>
       <div className={style.container}>
         <div className={style.form}>
-          <Image src={logo} alt=""/>
-          <h2>{t('consultation.formConsultation')}</h2>
+          <Image src={logo} alt="" />
+          <h2>{t("consultation.formConsultation")}</h2>
           <FieldSet>
             <FieldGroup>
               <div className="grid md:grid-cols-2 gap-4">
                 <Field className="gap-4">
                   <FieldLabel htmlFor="city" className={style.label}>
-                  {t('consultation.fullName')}
+                    {t("consultation.fullName")}
                   </FieldLabel>
                   <div className={style.inputWrapper}>
                     <Input
@@ -46,7 +41,7 @@ const FormConsultation = () => {
                 </Field>
                 <Field className="gap-4">
                   <FieldLabel htmlFor="zip" className={style.label}>
-                    {t('consultation.email')} *
+                    {t("consultation.email")} *
                   </FieldLabel>
                   <div className={style.inputWrapper}>
                     <Input
@@ -63,7 +58,7 @@ const FormConsultation = () => {
             <FieldGroup>
               <Field className="gap-4">
                 <FieldLabel htmlFor="city" className={style.label}>
-                  {t('consultation.companyName')} *
+                  {t("consultation.companyName")} *
                 </FieldLabel>
                 <div className={style.inputWrapper}>
                   <Input
@@ -72,15 +67,13 @@ const FormConsultation = () => {
                     placeholder="text here"
                     className={style.text}
                   />
-                </div>{" "}
+                </div>
               </Field>
             </FieldGroup>
-
-
             <FieldGroup>
               <Field className="gap-4">
                 <FieldLabel htmlFor="city" className={style.label}>
-                  {t('consultation.projectType')} *
+                  {t("consultation.projectType")} *
                 </FieldLabel>
                 <div className={style.inputWrapper}>
                   <Select>
@@ -89,7 +82,6 @@ const FormConsultation = () => {
                     >
                       <SelectValue placeholder="Theme" />
                     </SelectTrigger>
-
                     <SelectContent>
                       <SelectItem value="light">Light</SelectItem>
                       <SelectItem value="dark">Dark</SelectItem>
@@ -99,34 +91,24 @@ const FormConsultation = () => {
                 </div>
               </Field>
             </FieldGroup>
-
             <FieldGroup>
-  <Field className="gap-4">
-    <FieldLabel className={style.label}>
-     {t('consultation.date')} *
-    </FieldLabel>
+              <Field className="gap-4">
+                <FieldLabel className={style.label}>
+                  {t("consultation.date")} *
+                </FieldLabel>
 
-    <DatePickerInput />
-  </Field>
-</FieldGroup>
-
-
-
+                <DatePickerInput />
+              </Field>
+            </FieldGroup>
           </FieldSet>
-
           <Field>
             <Button type="submit">
-             {t('consultation.send')}
-              <ArrowUpRight color="#FCFCFC" size={24}/>
-
+              {t("consultation.send")}
+              <ArrowUpRight color="#FCFCFC" size={24} />
             </Button>
           </Field>
-
         </div>
-          <p>
-
-            {t('consultation.des')}
-          </p>
+        <p>{t("consultation.des")}</p>
       </div>
     </div>
   );

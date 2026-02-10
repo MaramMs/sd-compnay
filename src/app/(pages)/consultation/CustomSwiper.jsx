@@ -1,10 +1,10 @@
 "use client";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 import "swiper/css";
 import style from "../../../Sass/consultation/custom-siwper.module.scss";
-import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function CustomSwiper() {
   const paginationRef = useRef(null);

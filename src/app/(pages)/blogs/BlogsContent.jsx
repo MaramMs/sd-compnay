@@ -1,8 +1,8 @@
 import Link from "next/link";
 import ProjectCard from "@/components/ProjectCard";
 import Search from "../projects/Search";
-import style from "../../../Sass/blogs/blogs-content.module.scss";
 import {blogs} from '@/data/blogs'
+import style from "../../../Sass/blogs/blogs-content.module.scss";
 const BlogsContent = () => {
   return (
     <div className={style.blogContent}>

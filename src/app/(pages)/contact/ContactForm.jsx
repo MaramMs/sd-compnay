@@ -1,31 +1,24 @@
 "use client";
-import React from "react";
-import style from "../../../Sass/contact.module.scss";
+import Image from "next/image";
+import { useTranslation } from "react-i18next";
 import {
   Field,
-  FieldContent,
-  FieldDescription,
-  FieldError,
   FieldGroup,
   FieldLabel,
-  FieldLegend,
-  FieldSeparator,
   FieldSet,
-  FieldTitle,
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
-import logo from "../../../../public/assets/LOGO.svg";
-import Image from "next/image";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { useTranslation } from "react-i18next";
+import logo from "../../../../public/assets/LOGO.svg";
+import style from "../../../Sass/contact.module.scss";
 const ContactForm = () => {
   const { t } = useTranslation();
   return (
     <div className={style.contactForm}>
       <div className={style.container}>
         <div className={style.form}>
-          <Image src={logo} />
+          <Image src={logo} alt="" />
           <h2>{t("contact.title")}</h2>
           <FieldSet className="border-0">
             <FieldGroup>

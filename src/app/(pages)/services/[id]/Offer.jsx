@@ -1,9 +1,8 @@
 'use client';
-import React from "react";
-import style from "../../../../Sass/services/offer.module.scss";
-import tool from "../../../../../public/assets/concept.png";
-import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
+import tool from "../../../../../public/assets/concept.png";
+import style from "../../../../Sass/services/offer.module.scss";
 
 const Offer = () => {
   const { t } = useTranslation();
@@ -53,7 +52,7 @@ const Offer = () => {
 
         <div className={style.tools}>
           <div className={style.title}>
-            <Image src={tool} />
+            <Image src={tool} alt=""/>
             <h3>{t('services.tools')}</h3>
           </div>
           <div className={style.toolsItem}>

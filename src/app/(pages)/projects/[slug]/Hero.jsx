@@ -1,10 +1,9 @@
 import Image from "next/image";
-import React from "react";
-import style from "../../../../Sass/projects/hero.module.scss";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import heroImage from '../../../../../public/assets/projectDetails.jpg'
+import style from "../../../../Sass/projects/hero.module.scss";
 
 const Hero = () => {
   return (

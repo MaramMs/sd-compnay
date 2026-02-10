@@ -1,8 +1,7 @@
 "use client";
-import React from "react";
-import style from "../../../../Sass/projects/challenges-solution.module.scss";
-import { MousePointerClick, TriangleAlert } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { MousePointerClick, TriangleAlert } from "lucide-react";
+import style from "../../../../Sass/projects/challenges-solution.module.scss";
 
 const ChallengesAndSolution = () => {
   const { t } = useTranslation();

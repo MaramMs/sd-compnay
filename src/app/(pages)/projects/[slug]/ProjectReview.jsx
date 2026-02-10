@@ -1,19 +1,19 @@
 "use client";
-import React, { useRef } from "react";
-import style from "../../../../Sass/projects/project-review.module.scss";
+import { useTranslation } from "react-i18next";
+import { useRef } from "react";
 import { BsFillHexagonFill } from "react-icons/bs";
+import { ChevronLeft, ChevronRight} from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { ChevronLeft, ChevronRight, Star } from "lucide-react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import Image from "next/image";
 import image2 from "../../../../../public/assets/projectDe.jpg";
 import image3 from "../../../../../public/assets/feat1.jpg";
 import image4 from "../../../../../public/assets/feat2.jpg";
 const images = [image2, image3, image4];
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { useTranslation } from "react-i18next";
+import style from "../../../../Sass/projects/project-review.module.scss";
 
 const ProjectReview = () => {
   const paginationRef = useRef(null);
@@ -87,6 +87,7 @@ const ProjectReview = () => {
             <SwiperSlide>
               <div className={style.card}>
                 <Image
+                alt=""
                   src={image3}
                   // alt={`project-${i}`}
                   fill
@@ -99,6 +100,7 @@ const ProjectReview = () => {
               <div className={style.card}>
                 <Image
                   src={image2}
+                  alt=""
                   // alt={`project-${i}`}
                   fill
                   className={style.image}
@@ -109,6 +111,7 @@ const ProjectReview = () => {
             <SwiperSlide>
               <div className={style.card}>
                 <Image
+                alt=""
                   src={image4}
                   // alt={`project-${i}`}
                   fill

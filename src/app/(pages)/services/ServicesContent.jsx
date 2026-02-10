@@ -1,9 +1,8 @@
 'use client'
-import React from "react";
-import style from "../../../Sass/services/servicesContent.module.scss";
-import ServiceCard from "@/components/ServiceCard";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import ServiceCard from "@/components/ServiceCard";
+import style from "../../../Sass/services/servicesContent.module.scss";
 const services = [
   { id: 1, slug: "backend-development" },
   { id: 2, slug: "ui-ux-design" },

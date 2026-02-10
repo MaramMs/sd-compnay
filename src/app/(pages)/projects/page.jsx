@@ -1,10 +1,9 @@
 'use client'
-import Hero from '@/components/Hero'
-import React from 'react'
-import heroImage from '../../../../public/assets/project.jpg';
-import style from '../../../Sass/projects/project.module.scss'
-import ProjectContent from './projectContent';
 import { useTranslation } from 'react-i18next';
+import Hero from '@/components/Hero'
+import heroImage from '../../../../public/assets/project.jpg';
+import ProjectContent from './projectContent';
+import style from '../../../Sass/projects/project.module.scss'
 
 const Projects = () => {
   const {t} = useTranslation()

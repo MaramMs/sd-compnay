@@ -1,16 +1,12 @@
 "use client";
-
-import * as React from "react";
 import { format } from "date-fns";
 import { Calendar as CalendarIcon } from "lucide-react";
-
 import { Calendar } from "@/components/ui/calendar";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-
 import style from "@/Sass/consultation/FormConsultation.module.scss";
 
 const DatePickerInput = () => {
