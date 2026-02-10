@@ -1,4 +1,4 @@
-@use "@/Sass/helpers/variables.scss" as *;
+@use "../helpers/variables.scss" as *;
 .heroSection {
   display: flex;
   justify-content: center;
@@ -7,25 +7,24 @@
   height: 607px;
   // height: calc(100vh - 80px);
   overflow: hidden;
-    position: relative;
-    background-image: url("../../../public/assets/mainHome.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    // border-radius: 48px;
-    // padding: 60px 64px;
-    // display: flex;
-    // flex-direction: column;
-    gap: 64px;
-    overflow: hidden;
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(1, 13, 51, 0.72);
-      z-index: 0;
-    }
-
+  position: relative;
+  background-image: url("../../../public/assets/mainHome.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // border-radius: 48px;
+  // padding: 60px 64px;
+  // display: flex;
+  // flex-direction: column;
+  gap: 64px;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(1, 13, 51, 0.72);
+    z-index: 0;
+  }
 
   .heroContent {
     font-family: "montserrat", sans-serif;
@@ -38,7 +37,6 @@
     text-align: center;
     padding: 0 20px;
     color: $white_50;
-  
 
     .item {
       display: flex;
@@ -78,7 +76,7 @@
     }
   }
 
-     .icon {
+  .icon {
     position: fixed;
     z-index: 999;
     top: 650px;
@@ -115,11 +113,9 @@
         }
       }
     }
-    .icon{
+    .icon {
       top: 768px;
-    right: 25px;
+      right: 25px;
     }
   }
 }
-
-

@@ -2,9 +2,9 @@
   padding: 80px;
   background-color: #ffffff;
   .container {
-    max-width: 1232px; 
+    max-width: 1232px;
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -37,18 +37,14 @@
           font-size: 20px;
           cursor: pointer;
           text-align: start;
-            flex-direction: row !important;
-                padding: 20px 24px;
-                
-              
-
-              
+          flex-direction: row !important;
+          padding: 20px 24px;
 
           .item {
             display: flex;
             flex-direction: column;
             gap: 4px;
-             align-items: flex-start; 
+            align-items: flex-start;
           }
           h4 {
             font-weight: 700;
@@ -71,7 +67,7 @@
               font-size: 20px;
             }
 
-            svg{
+            svg {
               color: #8031cd;
               font-size: 24px;
             }
@@ -111,12 +107,12 @@
               font-size: 14px;
               font-family: "montserrat", sans-serif;
               text-transform: uppercase;
-                            padding-inline-start: 15px; // Added for RTL support
+              padding-inline-start: 15px; // Added for RTL support
 
               &:before {
                 content: "";
                 position: absolute;
-                  inset-inline-start: 0;
+                inset-inline-start: 0;
                 top: 7px;
                 width: 6px;
                 height: 6px;
@@ -131,11 +127,11 @@
               font-size: 14px;
               font-family: "montserrat", sans-serif;
               text-transform: uppercase;
-               padding-inline-start: 15px;
+              padding-inline-start: 15px;
               &:before {
                 content: "";
                 position: absolute;
-                  inset-inline-start: 0;
+                inset-inline-start: 0;
                 top: 7px;
                 width: 6px;
                 height: 6px;
@@ -176,7 +172,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-          text-align: start;
+        text-align: start;
       }
       button {
         height: 48px;
@@ -196,7 +192,6 @@
   }
 }
 
-
 [dir="rtl"] {
   .accordion {
     .container {
@@ -204,7 +199,7 @@
         button {
           flex-direction: row !important;
           svg {
-            transform: rotate(180deg); 
+            transform: rotate(180deg);
           }
         }
       }
@@ -237,8 +232,6 @@
                 }
               }
             }
-
-          
           }
 
           &[data-state="closed"] {

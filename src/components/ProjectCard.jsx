@@ -1,10 +1,7 @@
-import React from "react";
-import style from "../Sass/project-card.module.scss";
-import blog1 from "../../public/assets/blog1.jpg";
 import { Card, CardContent, CardDescription, CardTitle } from "./ui/card";
-import Image from "next/image";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
+import style from "@/Sass/components/project-card.module.scss";
 
 const ProjectCard = () => {
   return (

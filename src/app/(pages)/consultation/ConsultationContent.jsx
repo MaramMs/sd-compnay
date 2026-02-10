@@ -1,15 +1,12 @@
-import React from "react";
-import style from "../../../Sass/consultation/consultation-content.module.scss";
 import Scope from "./Scope";
 import Expertise from "./expertise";
-import ContactForm from "../contact/ContactForm";
 import FormConsultation from "./FormConsultation";
+import style from "../../../Sass/consultation/consultation-content.module.scss";
 
 const ConsultationContent = () => {
   return (
     <div className={style.ConsultationContent}>
       <Scope />
-
       <Expertise />
       <FormConsultation />
     </div>

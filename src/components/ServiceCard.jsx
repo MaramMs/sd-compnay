@@ -1,10 +1,9 @@
 "use client";
-import React from "react";
-import { ArrowLeft, ArrowRight, Cloud, Server } from "lucide-react";
+import { ArrowLeft, ArrowRight,Server } from "lucide-react";
 import { Button } from "./ui/button";
-import style from "../Sass/home/customSwiper.module.scss";
 import { useTranslation } from "react-i18next";
 import { useLanguage } from "@/context/LanguageContext";
+import style from "../Sass/home/customSwiper.module.scss";
 
 const ServiceCard = ({ index }) => {
   const { t } = useTranslation();

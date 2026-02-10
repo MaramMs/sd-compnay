@@ -1,4 +1,3 @@
-import React from "react";
 import ServicesList from "./ServicesList";
 import AboutUs from "./about-us";
 import Services from "./Services";

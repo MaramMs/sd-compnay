@@ -1,12 +1,10 @@
 'use client'
-import React from "react";
-import style from "../../../Sass/consultation/scope.module.scss";
 import { Settings } from "lucide-react";
-import { t } from "i18next";
 import { useTranslation } from "react-i18next";
+import style from "../../../Sass/consultation/scope.module.scss";
 
 const Scope = () => {
-  const {t} = useTranslation()
+  const {t} = useTranslation();
   return (
     <div className={style.scope}>
       <div className={style.container}>

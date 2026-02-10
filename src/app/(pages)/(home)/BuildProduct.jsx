@@ -8,7 +8,8 @@ import { useLanguage } from "@/context/LanguageContext";
 
 const BuildProduct = () => {
   const { t } = useTranslation();
-  const { isRTL } = useLanguage();
+  const { isRTL,mounted } = useLanguage();
+  if (!mounted) return null;
   return (
     <div className={style.buildProduct}>
       <div className={style.container}>
@@ -18,20 +19,17 @@ const BuildProduct = () => {
             <p>{t("build.subTitle")}</p>
           </div>
           <Button>
-          
-            {isRTL ?  (
+            {isRTL ? (
               <>
-               <ArrowLeft/>
-               {t("common.start")} 
-               </>
-            ) : 
-            (
-             <>
-               {t("common.start")} 
-               <ArrowRight />
-             </>
-            )
-            }
+                <ArrowLeft />
+                {t("common.start")}
+              </>
+            ) : (
+              <>
+                {t("common.start")}
+                <ArrowRight />
+              </>
+            )}
           </Button>
         </div>
       </div>

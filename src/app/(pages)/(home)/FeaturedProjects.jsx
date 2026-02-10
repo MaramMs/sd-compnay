@@ -1,21 +1,21 @@
 "use client";
-import React from "react";
-import style from "../../../Sass/home/featured-projects.module.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import { useTranslation } from "react-i18next";
+import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 import Image from "next/image";
 import feat1 from "../../../../public/assets/feat1.jpg";
 import feat2 from "../../../../public/assets/feat2.jpg";
 import feat3 from "../../../../public/assets/feat3.jpg";
-import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import { useTranslation } from "react-i18next";
-import { useLanguage } from "@/context/LanguageContext";
+import style from "../../../Sass/home/featured-projects.module.scss";
 const FeaturedProjects = () => {
   const { t } = useTranslation();
-  const { isRTL } = useLanguage();
-  console.log(isRTL, "rtl");
+  const { isRTL, mounted } = useLanguage();
+
+  if (!mounted) return null;
   return (
     <div className={style.featuredProjects}>
       <div className={style.container}>
@@ -29,6 +29,7 @@ const FeaturedProjects = () => {
               <div className={style.card}>
                 <div className={style.image}>
                   <Image
+                    alt=""
                     src={feat1}
                     width={568}
                     height={197}
@@ -64,6 +65,7 @@ const FeaturedProjects = () => {
               <div className={style.cardTwo}>
                 <div className={style.image}>
                   <Image
+                    alt=""
                     src={feat2}
                     width={272}
                     height={222}
@@ -101,6 +103,7 @@ const FeaturedProjects = () => {
               <div className={style.cardTwo}>
                 <div className={style.image}>
                   <Image
+                    alt=""
                     src={feat3}
                     width={272}
                     height={222}
@@ -150,6 +153,7 @@ const FeaturedProjects = () => {
               <div className={style.card}>
                 <div className={style.image}>
                   <Image
+                  alt=""
                     src={feat1}
                     width={568}
                     height={197}
@@ -186,6 +190,7 @@ const FeaturedProjects = () => {
               <div className={style.card}>
                 <div className={style.image}>
                   <Image
+                    alt=""
                     src={feat1}
                     width={568}
                     height={197}
@@ -222,6 +227,7 @@ const FeaturedProjects = () => {
               <div className={style.card}>
                 <div className={style.image}>
                   <Image
+                    alt=""
                     src={feat1}
                     width={568}
                     height={197}

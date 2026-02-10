@@ -1,8 +1,7 @@
-import React from "react";
-import style from "../../../../Sass/blogs/blog-content.module.scss";
 import RelatedBlog from "./RelatedBlog";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Calendar } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import style from "../../../../Sass/blogs/blog-content.module.scss";
 
 const BlogContent = () => {
   return (

@@ -1,19 +1,16 @@
-'use client'
-import React from "react";
-import style from "../../../Sass/consultation/expertise.module.scss";
+"use client";
 import CustomSwiper from "./CustomSwiper";
 import { useTranslation } from "react-i18next";
+import style from "../../../Sass/consultation/expertise.module.scss";
 
 const Expertise = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
     <div className={style.expertise}>
       <div className={style.container}>
         <div className={style.title}>
-          <h2>{t('consultation.expertiseTitle')}</h2>
-          <p>
-          {t('consultation.expertiseDes')}
-          </p>
+          <h2>{t("consultation.expertiseTitle")}</h2>
+          <p>{t("consultation.expertiseDes")}</p>
         </div>
         <div className={style.cards}>
           <div className={style.card}>
@@ -32,9 +29,7 @@ const Expertise = () => {
             <div className={style.line}></div>
           </div>
         </div>
-
-              <CustomSwiper />
-
+        <CustomSwiper />
       </div>
     </div>
   );

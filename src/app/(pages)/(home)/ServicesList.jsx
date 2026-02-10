@@ -1,35 +1,6 @@
-import React from "react";
 import Image from "next/image";
 import style from "@/Sass/home/servicesList.module.scss";
-import icon from "../../../../public/assets/icon.svg";
-import { FaWhatsapp } from "react-icons/fa";
-
-const servicesItems = [
-  {
-    icon: icon,
-    title: "Web Development",
-  },
-  {
-    icon: icon,
-    title: "Mobile Apps",
-  },
-  {
-    icon: icon,
-    title: "UI/UX Design",
-  },
-  {
-    icon: icon,
-    title: "Backend & APIs",
-  },
-  {
-    icon: icon,
-    title: "Cloud & DevOps",
-  },
-  {
-    icon: icon,
-    title: "Tech Consulting",
-  },
-];
+import {servicesItems} from '@/data/servicesItem'
 
 const ServicesList = () => {
   return (
@@ -44,8 +15,6 @@ const ServicesList = () => {
           </div>
         ))}
       </div>
-
-   
     </div>
   );
 };

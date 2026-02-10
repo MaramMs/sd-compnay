@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import style from "../Sass/footer.module.scss";
+import style from "@/Sass/layout/footer.module.scss";
 import Image from "next/image";
 import logo from "../../public/assets/LOGO.svg";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";

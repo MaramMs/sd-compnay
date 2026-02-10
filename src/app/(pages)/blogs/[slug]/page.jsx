@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
-import React from "react";
-import heroImage from "../../../../../public/assets/blog.jpg";
 import BlogContent from "./BlogContent";
+import heroImage from "../../../../../public/assets/blog.jpg";
 
 const BlogDetails = () => {
   return (

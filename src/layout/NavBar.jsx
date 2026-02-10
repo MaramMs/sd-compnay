@@ -1,9 +1,8 @@
 "use client";
-
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/context/LanguageContext";
-import style from "@/Sass/navbar.module.scss";
+import style from "@/Sass/layout/navbar.module.scss";
 import { ArrowRight, Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,13 +11,12 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import logo from "../../public/assets/LOGO.svg";
 
+
 const navItems = [
   { labelKey: "nav.home", href: "/" },
   { labelKey: "nav.about", href: "/about-us" },
   { labelKey: "nav.services", href: "/services" },
   { labelKey: "nav.projects", href: "/projects" },
-  // { labelKey: "nav.blogs", href: "/blogs" },
-  // { labelKey: "nav.consultation", href: "/consultation" },
   { labelKey: "nav.contact", href: "/contact" },
 ];
 
@@ -26,7 +24,7 @@ const NavBar = () => {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const { t } = useTranslation();
-  const { mounted, currentLanguage } = useLanguage();
+  const { mounted} = useLanguage();
 
   return (
     <nav className={style.navbar}>

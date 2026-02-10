@@ -1,12 +1,11 @@
 'use client';
 import Image from "next/image";
-import React from "react";
-import style from "../Sass/hero.module.scss";
+import { useLanguage } from "@/context/LanguageContext";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import { useTranslation } from "react-i18next";
-import { useLanguage } from "@/context/LanguageContext";
+import style from "@/Sass/components/hero.module.scss";
 
 const Hero = ({ heroImage, title }) => {
   const { t } = useTranslation();

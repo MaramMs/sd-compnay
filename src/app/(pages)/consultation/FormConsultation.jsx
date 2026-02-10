@@ -1,23 +1,14 @@
 'use client'
-import React from "react";
-import style from "../../../Sass/consultation/FormConsultation.module.scss";
+import Image from "next/image";
 import {
   Field,
-  FieldContent,
-  FieldDescription,
-  FieldError,
   FieldGroup,
   FieldLabel,
-  FieldLegend,
-  FieldSeparator,
   FieldSet,
-  FieldTitle,
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
-import logo from "../../../../public/assets/LOGO.svg";
-import Image from "next/image";
-import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import logo from "../../../../public/assets/LOGO.svg";
 import {
   Select,
   SelectContent,
@@ -26,16 +17,16 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { ArrowUpRight } from "lucide-react";
-import DatePicker from "./DatePickerInput";
 import DatePickerInput from "./DatePickerInput";
 import { useTranslation } from "react-i18next";
+import style from "../../../Sass/consultation/FormConsultation.module.scss";
 const FormConsultation = () => {
   const {t} = useTranslation()
   return (
     <div className={style.contactForm}>
       <div className={style.container}>
         <div className={style.form}>
-          <Image src={logo} />
+          <Image src={logo} alt=""/>
           <h2>{t('consultation.formConsultation')}</h2>
           <FieldSet>
             <FieldGroup>

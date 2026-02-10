@@ -1,4 +1,4 @@
-@use "../Sass/helpers/variables.scss" as *;
+@use "../helpers/variables.scss" as *;
 .navbar {
   background-color: #303a49;
 }
@@ -32,7 +32,8 @@
   }
 }
 
-.navButtons , .mobileButtons {
+.navButtons,
+.mobileButtons {
   display: flex;
   gap: 16px;
   .start {
@@ -108,7 +109,6 @@
   .navbar {
     padding: 0px 16px;
   }
-  .mobileButtons{
-
+  .mobileButtons {
   }
 }

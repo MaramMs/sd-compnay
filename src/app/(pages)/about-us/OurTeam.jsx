@@ -1,39 +1,7 @@
 import Image from "next/image";
 import style from "../../../Sass/aboutUs/our-team.module.scss";
-import team1 from '../../../../public/assets/team/team1.jpg';
-import team2 from '../../../../public/assets/team/team2.png';
-import team3 from '../../../../public/assets/team/team3.jpg';
+import {teams} from '@/data/teamItems'
 
-const teams = [
-  {
-    id: "1",
-    name: "maram",
-    position: "developer",
-    image: team1,
-    des: "Tech leader with 10+ years of experience in cloud architecture and innovation. Specialized in building scalable,  high-stability systems for business growth.",
-  },
-  {
-    id: "2",
-    name: "maram",
-    position: "developer",
-    image:team2,
-    des: "Tech leader with 10+ years of experience in cloud architectur and innovation. Specialized in building scalable, high-stability systems for business growth.",
-  },
-  {
-    id: "3",
-    name: "maram",
-    // image: team3,
-    position: "developer",
-  },
-  {
-    id: "4",
-    name: "maram",
-    image: team3,
-    position: "developer",
-  },
-];
-
-console.log(teams)
 export const OurTeam = () => {
   return (
     <div className={style.ourTeam}>
@@ -56,7 +24,7 @@ export const OurTeam = () => {
                 </div>
 
                 <div className={style.cover}>
-                  <Image src={item.image} width={272} height={374} />
+                  <Image src={item.image} width={272} height={374} alt=''/>
                   <div className={style.info}>
                     <h4>{item.name}</h4>
                     <span>{item.position}</span>

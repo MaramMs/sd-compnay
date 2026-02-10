@@ -130,8 +130,7 @@
       }
       .second {
         position: relative;
-        margin: 0px;
-        // @include margin-inline-end(auto);
+        margin: auto;
         z-index: 1;
         img {
           position: relative;
@@ -145,7 +144,7 @@
           height: 406px;
           background: #d792ff;
           top: -20px;
-          @include inset-inline-end(-20px);
+          @include inset-inline-end(start);
           z-index: -1;
           border-top-left-radius: 24px;
           border-top-right-radius: 136px;
