@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import { format } from "date-fns";
 import { Calendar as CalendarIcon } from "lucide-react";
 import { Calendar } from "@/components/ui/calendar";
@@ -10,7 +11,7 @@ import {
 import style from "@/Sass/consultation/FormConsultation.module.scss";
 
 const DatePickerInput = () => {
-  const [date, setDate] = React.useState();
+  const [date, setDate] = useState();
 
   return (
     <div className={style.inputWrapper}>

@@ -1,4 +1,3 @@
-import React from 'react'
 import ConsultationContent from './ConsultationContent';
 import style from '../../../Sass/consultation/consultation-content.module.scss'
 import CustomSwiper from './CustomSwiper';
