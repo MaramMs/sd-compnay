@@ -11,12 +11,55 @@
     "title1": "Your Vision,",
     "title2": "Our Expertise",
     "title3": "Let's Build It",
-    "subtitle": "Innovative Digital Solutions for Your Business",
+    "subtitle": "We turn ideas into scalable software",
     "button": "start your project"
+  },
+  "servicesList":{
+    "webDevelopment": {
+      "title":"Custom Web Development",
+      "des":" Build responsive, high-performance websites tailored to your business goals."
+    },
+    "mobileApps": {
+      "title": " Mobile App Development",
+      "des":"  Develop intuitive iOS and Android applications to engage and grow your audience."
+    },
+    "uiUxDesign":
+    {
+      "title":"UI/UX Design",
+      "des":"Design user-centered interfaces that enhance usability and strengthen brand identity."
+    },
+
+    "dashboard": 
+    {
+      "title":" Dashboard & Analytics Tools" ,
+      "des":" Develop integrated dashboards for real-time insights and data-driven decisions."
+    },
+
+    "eCommerce":{
+      "title":" E-Commerce Platforms",
+      "des":"Create scalable online stores with secure payment systems and seamless user experience."
+    }, 
+
+    "techSupport": {
+      "title":" Tech Support",
+      "des":" Continuous support, updates, and optimization to ensure stability and performance. "
+    },
+    "businessSoftwareSolutions":{
+      "title":" Business Software Solutions",
+      "des":"    Design and implement custom systems to streamline operations and workflows."
+    },
+
+    "digitalMarketingSol":
+     
+    {
+      "title":"  Digital Marketing Solutions",
+      "des":"    Data-driven marketing strategies to boost visibility and drive business growth."
+    }
+    
   },
   "about": {
     "title": "About Us",
-    "description": "SD is your trusted software development partner. We deliver innovative tech solutions that help businesses grow and scale in the digital age with efficiency and professionalism.",
+    "description": "SimplesDev is a leading software development company specializing in crafting digital solutions for,businesses across diverse sectors. We design and develop professional websites, customized systems and comprehensive dashboards tailored to each client’s unique needs, delivering high-qualit.solutions grounded in precise analysis of business goals Our tech services are built on speed, performance, and reliability, supported by continuous technical assistance to ensure your projects grow and evolve without interruption. At SimplesDev, we.transform ideas into scalable digital realities that drive business succes.",
     "years": "Years of Experience",
     "projectsCompleted": "Projects Delivered",
     "story": "Our Story",
@@ -54,7 +97,27 @@
     "quality": "جودة عالية",
     "expertise": "خبرة واسعة",
     "support": "دعم مستمر",
-    "innovation": "حلول مبتكرة"
+    "innovation": "حلول مبتكرة",
+    "itemList":{
+      "one":{
+        "title":" Dedicated Expert Team",
+        "des":"A team of professional developers and designers committed to your project success"
+      },
+      "two":{
+        "title":"Scalable Architecture",
+        "des":"We build solutions that grow with your business and handle increased users"
+      },
+      "three":{
+        "title":"On-Time Delivery",
+        "des":"We meet deadlines and deliver high-quality projects on schedule"
+      },
+      "four":{
+        "title":" Long-Term Partnership",
+        "des":"We provide ongoing support and maintenance to ensure your long-term success"
+
+      }
+
+    }
   },
   "projects": {
     "heroTitle":"SD Projects",
@@ -78,7 +141,25 @@
     "step1": "Discovery & Planning",
     "step2": "Design & Prototyping",
     "step3": "Development & Testing",
-    "step4": "Deployment & Support"
+    "step4": "Deployment & Support",
+    "itemList":{
+      "one":{
+        "title":"Discover",
+        "des":"We understand your needs, goals and analyze the market and competitors"
+      },
+      "two":{
+      "title":"Design",
+      "des":"We design engaging user experience and modern, innovative interfaces"  
+      },
+      "three":{
+        "title":"Develop",
+        "des":"We build the solution using latest technologies and best practices"  
+        },
+        "four":{
+          "title":"Launch",
+          "des":"We launch the product and provide ongoing support to ensure success"  
+          }
+    }
   },
   "build": {
     "title": "Ready to build your next product with SD?",

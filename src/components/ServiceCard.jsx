@@ -5,9 +5,10 @@ import { useTranslation } from "react-i18next";
 import { useLanguage } from "@/context/LanguageContext";
 import style from "../Sass/home/customSwiper.module.scss";
 
-const ServiceCard = ({ index }) => {
+const ServiceCard = ({ index ,item}) => {
   const { t } = useTranslation();
   const { isRTL } = useLanguage();
+  console.log(item , 'item')
   return (
     <div className={style.slideContent}>
       <div className={style.serviceTitle}>
@@ -20,8 +21,8 @@ const ServiceCard = ({ index }) => {
       </div>
 
       <div className={style.serviceDesc}>
-        <h3>Backend & APIs</h3>
-        <p>cRobust, secure backend architecture with reliable APIs</p>
+      <h3>{t(item?.titleKey)}</h3>
+      {item?.desKey && <p>{t(item?.desKey)}</p>}
 
         <Button>
           {isRTL ? (

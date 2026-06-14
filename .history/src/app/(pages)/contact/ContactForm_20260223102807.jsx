@@ -11,7 +11,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import logo from "../../../../public/assets/LOGO.svg";
-import style from "@/Sass/consultation/FormConsultation.module.scss";
+import style from "@/Sass/contact.module.scss";
 const ContactForm = () => {
   const { t } = useTranslation();
   return (

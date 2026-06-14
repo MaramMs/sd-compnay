@@ -23,8 +23,8 @@ const Process = () => {
                   <h4>{item.number}</h4>
                 </div>
                 <div className={style.processContent}>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
+                  <h3>{t(item.title)}</h3>
+                  <p>{t(item.description)}</p>
                 </div>
               </div>
             ))}

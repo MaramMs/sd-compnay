@@ -7,6 +7,24 @@ const WhyChooseUs = () => {
   const { t } = useTranslation();
   const { mounted } = useLanguage();
   if (!mounted) return null;
+  const items = [
+    {
+      title :"chooseUs.itemList.one.title",
+      des:'chooseUs.itemList.one.des'
+    },
+    {
+      title :"chooseUs.itemList.two.title",
+      des:'chooseUs.itemList.two.des'
+    },
+    {
+      title :"chooseUs.itemList.three.title",
+      des:'chooseUs.itemList.three.des'
+    },
+    {
+      title :"chooseUs.itemList.four.title",
+      des:'chooseUs.itemList.four.des'
+    }
+  ]
   return (
     <div className={style.whyChooseUs}>
       <div className={style.container}>
@@ -16,36 +34,18 @@ const WhyChooseUs = () => {
             <p>{t("chooseUs.description")}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16">
-            <div className={style.card}>
-              <h3>Dedicated Expert Team</h3>
-              <p>
-                A team of professional developers and designers committed to
-                your project success
-              </p>
-            </div>
-            <div className={style.card}>
-              <h3>Dedicated Expert Team</h3>
-              <p>
-                A team of professional developers and designers committed to
-                your project success
-              </p>
-            </div>
-
-            <div className={style.card}>
-              <h3>Dedicated Expert Team</h3>
-              <p>
-                A team of professional developers and designers committed to
-                your project success
-              </p>
-            </div>
-
-            <div className={style.card}>
-              <h3>Dedicated Expert Team</h3>
-              <p>
-                A team of professional developers and designers committed to
-                your project success
-              </p>
-            </div>
+            {
+            items.map((item,index) =>{
+              return (
+                <div className={style.card} key={index}>
+                <h3>{t(item.title)}</h3>
+                <p>
+                 {t(item.des)}
+                </p>
+              </div>
+              )
+            })
+          }
           </div>
         </div>
       </div>

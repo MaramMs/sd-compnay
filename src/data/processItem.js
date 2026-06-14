@@ -3,29 +3,28 @@ export const processItems = [
   {
     number: "01",
     icon: <Search size={24} />,
-    title: "Ideation",
+    title: "process.itemList.one.title",
     description:
-      "Brainstorming and conceptualizing innovative ideas to kickstart the project.",
+      "process.itemList.one.des",
   },
   {
     number: "02",
     icon: <Palette size={24} />,
-    title: "Ideation",
+    title: "process.itemList.two.title",
     description:
-      "Brainstorming and conceptualizing innovative ideas to kickstart the project.",
+      "process.itemList.two.des",
   },
   {
     number: "03",
-    icon: <CodeXml size={24} />,
-    title: "Ideation",
+    title: "process.itemList.three.title",
     description:
-      "Brainstorming and conceptualizing innovative ideas to kickstart the project.",
+      "process.itemList.three.des",
   },
   {
     number: "04",
     icon: <Rocket size={24} />,
-    title: "Ideation",
+    title: "process.itemList.four.title",
     description:
-      "Brainstorming and conceptualizing innovative ideas to kickstart the project.",
+      "process.itemList.four.des",
   },
 ];

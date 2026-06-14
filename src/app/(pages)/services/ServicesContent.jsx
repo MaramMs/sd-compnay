@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import ServiceCard from "@/components/ServiceCard";
 import style from "../../../Sass/services/servicesContent.module.scss";
+import { servicesItems } from "@/data/servicesItem";
 const services = [
   { id: 1, slug: "backend-development" },
   { id: 2, slug: "ui-ux-design" },
@@ -29,13 +30,13 @@ const ServicesContent = () => {
           </div>
         </div>
         <div className={style.servicesItems}>
-            {services.map((index,service) => (
+            {servicesItems.map((item,index) => (
               <Link
-                key={service.id}
-                href={`/services/${service.slug}`}
+                key={item.id}
+                href={`/services/${item.slug}`}
                 className={style.serviceLink}
               >
-                <ServiceCard index={index.id}/>
+                <ServiceCard item={item} index={index}/>
               </Link>
             ))}
         </div>

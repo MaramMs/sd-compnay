@@ -33,14 +33,14 @@ const AboutUs = () => {
           }
           <div className={style.experiences}>
             <div className={style.box}>
-              <span>8 +</span>
+              <span>7 +</span>
               <p>
                 {t("about.years")}
               </p>
             </div>
 
             <div className={style.box}>
-              <span>50 +</span>
+              <span>30 +</span>
               <p>
                 {t("about.projectsCompleted")}
               </p>

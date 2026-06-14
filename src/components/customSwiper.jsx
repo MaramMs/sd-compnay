@@ -3,12 +3,11 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import style from "../Sass/home/customSwiper.module.scss";
-import { ArrowLeft, ArrowRight, Cloud, Server } from "lucide-react";
-import { Button } from "./ui/button";
 import { Mousewheel } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 import { useLanguage } from "@/context/LanguageContext";
 import ServiceCard from "./ServiceCard";
+import { servicesItems } from "@/data/servicesItem";
 const CustomSwiper = () => {
   const { t } = useTranslation();
   const { isRTL } = useLanguage();
@@ -42,10 +41,11 @@ const CustomSwiper = () => {
         },
       }}
     >
-      {[1, 2, 3, 4, 5, 6].map((index, item) => {
+      {servicesItems.map((item,index) => {
+        console.log(item , 'item from silder')
         return (
-          <SwiperSlide>
-            <ServiceCard index={index} />
+          <SwiperSlide key={index}>
+            <ServiceCard index={index} item={item}/>
           </SwiperSlide>
         );
       })}
